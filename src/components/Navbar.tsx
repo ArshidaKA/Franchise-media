@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // import Logo from "./Logo";
 
 const Navbar: React.FC = () => {
@@ -9,8 +10,16 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const path = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Service", path: "/service" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
+  ]
+
   return (
-    <nav className="w-full py-4 px-6 md:px-12 lg:px-20 bg-white shadow-sm">
+    <nav className="w-full py-4 px-6 md:px-12 lg:px-20 bg-white ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <img src="/logo/logo.png" className=" h-20" alt="logo-image" />
 
@@ -21,46 +30,15 @@ const Navbar: React.FC = () => {
 
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-12">
-          <li>
-            <a
-              href="#"
+          {path.map((item,i) =>
+          <Link key={i} to={item.path} >
+            <li
               className="text-gray-900 hover:text-blue-700 font-medium"
             >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-gray-900 hover:text-blue-700 font-medium"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-gray-900 hover:text-blue-700 font-medium"
-            >
-              Service
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-gray-900 hover:text-blue-700 font-medium"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-gray-900 hover:text-blue-700 font-medium"
-            >
-              Contact
-            </a>
-          </li>
+              {item.name}
+            </li>
+          </Link>
+           )}
         </ul>
 
         {/* Mobile menu */}

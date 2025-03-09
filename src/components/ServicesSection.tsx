@@ -29,7 +29,7 @@ const ServicesSection: React.FC = () => {
               discover how franchising can help you unlock new avenues for
               growth!
             </p>
-            <button className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-md transition duration-300">
+            <button className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300">
               Explore Services
             </button>
           </div>
@@ -51,7 +51,7 @@ const ServicesSection: React.FC = () => {
               difference in overcoming hurdles and ensuring a smooth operational
               launch.
             </p>
-            <button className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-md transition duration-300">
+            <button className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300">
               Explore Services
             </button>
           </div>

@@ -3,12 +3,12 @@ import type React from "react";
 const FounderSection: React.FC = () => {
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2  items-center">
         <div>
           <img
             src="/home/founder.png"
             alt="Mr. Safwan CK"
-            className="w-full max-w-md h-auto rounded-lg mx-auto"
+            className="max-w-md h-[30rem] rounded-lg mx-auto"
           />
         </div>
         <div>

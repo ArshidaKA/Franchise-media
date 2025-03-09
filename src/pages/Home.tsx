@@ -13,9 +13,8 @@ const Home = () => {
         <PartnerLogos />
         <ExpertiseSection />
         <ServicesSection />
-        <FounderSection />
         <TestimonialsSection />
-        
+        <FounderSection />
     </div>
   )
 }

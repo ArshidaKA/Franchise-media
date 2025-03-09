@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
             Empowering your journey to global financial success through
             customised and personalised financial Consulting for every client
           </p>
-          <button className="mt-8 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-md transition duration-300">
+          <button className="mt-8 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300">
             Request for a free consultation
           </button>
         </div>
