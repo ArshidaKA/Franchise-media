@@ -1,4 +1,6 @@
 import type React from "react";
+import expert from '../../../public/json/A Bunch of Expert Teams.json'
+import Lottie from "react-lottie-player";
 
 
 const WhoAreWe: React.FC = () => {
@@ -46,10 +48,11 @@ const WhoAreWe: React.FC = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img
-              src="/about/about.png"
-              alt="Team illustration"
-              className="w-full h-auto"
+            <Lottie
+              loop
+              animationData={expert}
+              play
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -79,7 +82,6 @@ const WhoAreWe: React.FC = () => {
           </div>
         </div>
       </section>
-
     </div>
   );
 };

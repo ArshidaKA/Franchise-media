@@ -1,5 +1,7 @@
 import type React from "react";
 import { FaHandshake } from "react-icons/fa";
+import Lottie from "react-lottie-player";
+import Business from "../../../public/json/Start Your Own Franchise Business.json";
 
 const FranchiseServices: React.FC = () => {
   return (
@@ -21,10 +23,11 @@ const FranchiseServices: React.FC = () => {
           </div>
 
           <div className="md:w-1/2 relative">
-            <img
-              src="/service/03.png"
-              alt="Franchise Business Illustration"
-              className="w-full h-auto"
+            <Lottie
+              loop
+              animationData={Business}
+              play
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </div>

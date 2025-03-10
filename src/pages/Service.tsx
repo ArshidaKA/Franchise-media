@@ -1,10 +1,12 @@
 import OurService from "../components/service/OurService";
 import FranchiseServices from "../components/service/Section01";
+import consult from "../../public/json/Franchise Consulting Services.json";
+import Existing from "../../public/json/Services for Existing Franchisors.json";
 
 export interface ExperienceDataType {
   title: string;
   content: string;
-  img: string;
+  img: object;
   tag: string;
   subTitle: string;
   list: string[];
@@ -14,7 +16,7 @@ const experienceData: ExperienceDataType[] = [
     title: "Franchise Your Business?",
     content:
       "If you have a successful business model, it’s important to pursue growth that is secure, sustainable, and requires less capital investment. To plan this process effectively, you will need expert guidance for different areas. Reach out to us for franchise consulting, development, implementation, marketing phase and discover how franchising can help you unlock new avenues for growth!",
-    img: "/service/01.png",
+    img: consult,
     tag: "OUr services",
     subTitle: "Franchise Consulting Services",
     list: [
@@ -29,7 +31,7 @@ const experienceData: ExperienceDataType[] = [
     title: "Franchise Marketing Service",
     content:
       "If you have a successful business model, it’s important to pursue growth that is secure, sustainable, and requires less capital investment. To plan this process effectively, you will need expert guidance for different areas. Reach out to us for franchise consulting, development, implementation, marketing phase and discover how franchising can help you unlock new avenues for growth!",
-    img: "/service/02.png",
+    img: Existing,
     tag: "Our services",
     subTitle: "Services for Existing Franchisors",
     list: [

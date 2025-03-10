@@ -2,12 +2,14 @@
 import {
   FaBriefcase,
 } from "react-icons/fa";
+import Lottie from "react-lottie-player";
+
 
 interface OurServiceProps {
   item: {
     title: string;
     content: string;
-    img: string;
+    img: object;
     tag: string;
     subTitle: string;
     list: string[];
@@ -32,10 +34,11 @@ const OurService = ({ item }: OurServiceProps) => {
 
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
-            <img
-              src={item.img}
-              alt="Franchise illustration"
-              className="w-full h-auto"
+            <Lottie
+              loop
+              animationData={item.img}
+              play
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
 

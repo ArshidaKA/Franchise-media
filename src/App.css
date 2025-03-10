@@ -1,5 +1,20 @@
 
 
+
 body{
-    font-family: fantasy;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.color{
+    color: #1A202C;
+}
+.bgColor{
+    background-color: #1A202C;
+}
+.headingColor{
+    color: #2B3A8F;
+}
+.contentColor{
+    color: #575757;
 }
