@@ -12,7 +12,7 @@ const FounderSection: React.FC = () => {
             className="max-w-md h-[30rem] rounded-lg mx-auto"
           />
         </div>
-        <div>
+        <div> 
           <TagButtonWithLine label="Founder’s Note" />
           <p
             data-aos="fade-up"

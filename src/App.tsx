@@ -10,6 +10,8 @@ import "./App.css"
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SafeOption from "./components/blog/SafeOption";
+import Franchisable from "./components/blog/Franchisable";
 
 const App = () => {
    useEffect(() => {
@@ -29,6 +31,8 @@ const App = () => {
         <Route path="/service" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/safeOption" element={<SafeOption />} />
+        <Route path="/franchisable" element={<Franchisable />} />
       </Routes>
       <Footer />
     </>

@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom"
 
 
 const Hero = () => {
+
+
+
   return (
     <div className="max-w-6xl mx-auto py-16">
       {/* Blog Section */}
@@ -12,42 +16,46 @@ const Hero = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Blog Post 1 */}
-          <div>
-            <div className="rounded-lg overflow-hidden mb-4">
-              <img
-                src="/blog/top01.png"
-                alt="People in a restaurant"
-                className="w-full h-48 object-cover"
-              />
+          <Link to="/safeOption">
+            <div>
+              <div className="rounded-lg overflow-hidden mb-4">
+                <img
+                  src="/blog/top01.png"
+                  alt="People in a restaurant"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-bold text-indigo-800 mb-2">
+                Why Franchising Is the Safer Option
+              </h4>
+              <p className="text-gray-700">
+                Startup culture is taking over the modern world and is quickly
+                becoming a popular choice for youngsters. A great place to start
+                your...
+              </p>
             </div>
-            <h4 className="text-xl font-bold text-indigo-800 mb-2">
-              Why Franchising Is the Safer Option
-            </h4>
-            <p className="text-gray-700">
-              Startup culture is taking over the modern world and is quickly
-              becoming a popular choice for youngsters. A great place to start
-              your...
-            </p>
-          </div>
+          </Link>
 
           {/* Blog Post 2 */}
-          <div>
-            <div className="rounded-lg overflow-hidden mb-4">
-              <img
-                src="/blog/top02.png"
-                alt="McDonald's restaurant"
-                className="w-full h-48 object-cover"
-              />
+          <Link to="/franchisable">
+            <div>
+              <div className="rounded-lg overflow-hidden mb-4">
+                <img
+                  src="/blog/top02.png"
+                  alt="McDonald's restaurant"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <h4 className="text-xl font-bold text-indigo-800 mb-2">
+                Is My Business Franchisable?
+              </h4>
+              <p className="text-gray-700">
+                The franchise industry, although a relatively new concept in
+                India, is making a significant mark in the market. For many
+                business owners,...
+              </p>
             </div>
-            <h4 className="text-xl font-bold text-indigo-800 mb-2">
-              Is My Business Franchisable?
-            </h4>
-            <p className="text-gray-700">
-              The franchise industry, although a relatively new concept in
-              India, is making a significant mark in the market. For many
-              business owners,...
-            </p>
-          </div>
+          </Link>
         </div>
       </section>
 
