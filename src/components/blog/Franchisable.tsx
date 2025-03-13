@@ -8,7 +8,7 @@ export default function Franchisable() {
 
       {/* Blog Title */}
       <h1 className="text-3xl md:text-4xl font-bold text-indigo-600 mb-6">
-        Why Franchising Is the Safer Option
+        Is My Business Franchisable
       </h1>
 
       {/* Featured Image */}
