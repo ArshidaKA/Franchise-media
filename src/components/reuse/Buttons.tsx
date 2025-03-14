@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export const TagButton = ({ label }:{label:string}) => {
   return (
@@ -33,22 +33,29 @@ interface ButtonProps {
 
 
 export const Button = ({ label, clickHandle, navigateTo }: ButtonProps) => {
-  return (
-    <Link
-      to={navigateTo || ""}
-      smooth={true}
-      duration={500}
-      offset={-100}
-      spy={true}
-    >
-      <button
-        onClick={clickHandle}
-        data-aos="fade-up"
-        data-aos-duration="1400"
-        className="bg-green-500 contentFont hover:bg-green-600  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
+  if (navigateTo) {
+    return (
+      <Link
+        to={navigateTo}
       >
-        {label}
-      </button>
-    </Link>
+        <button
+          data-aos="fade-up"
+          data-aos-duration="1400"
+          className="bg-green-500 contentFont hover:bg-green-600  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
+        >
+          {label}
+        </button>
+      </Link>
+    );
+  }
+  return (
+    <button
+      onClick={clickHandle}
+      data-aos="fade-up"
+      data-aos-duration="1400"
+      className="bg-green-500 contentFont hover:bg-green-600  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
+    >
+      {label}
+    </button>
   );
 };

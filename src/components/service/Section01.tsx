@@ -5,7 +5,10 @@ import Business from "../../../public/json/Start Your Own Franchise Business.jso
 
 const FranchiseServices: React.FC = () => {
   return (
-    <section className="max-w-7xl mx-auto pb-16 px-4 md:px-8">
+    <section
+      id="StartYourOwnFranchiseBusiness"
+      className="max-w-7xl mx-auto pb-16 px-4 md:px-8"
+    >
       <div className="flex flex-col items-center pb-6 ">
         <div className=" flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">

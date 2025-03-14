@@ -40,7 +40,7 @@ const ServicesSection: React.FC = () => {
             </p>
 
             <Button
-              navigateTo="Franchise Marketing Service"
+              navigateTo="/service#FranchiseMarketingService"
               label="Explore Services"
             />
           </div>
@@ -69,7 +69,10 @@ const ServicesSection: React.FC = () => {
               launch.
             </p>
 
-            <Button label="Explore Services" />
+            <Button
+              navigateTo="/service#StartYourOwnFranchiseBusiness"
+              label="Explore Services"
+            />
           </div>
           <div
             data-aos="fade-up"

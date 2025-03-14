@@ -1,6 +1,33 @@
+import { useState } from "react";
 
 
 const HeroContact = () => {
+    const [formData, setFormData] = useState({
+      fullName: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
+
+   const handleChange = (
+     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+   ) => {
+     const { name, value } = e.target;
+     setFormData({ ...formData, [name]: value });
+   };
+
+const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  alert("Your form is successfully submitted");
+   setFormData({
+     fullName: "",
+     email: "",
+     phone: "",
+     subject: "",
+     message: "",
+   });
+};
   return (
     <div>
       {/* Contact Us Section */}
@@ -51,7 +78,8 @@ const HeroContact = () => {
           </div>
 
           {/* Feedback Form */}
-          <div
+          <form
+            onSubmit={submitHandle}
             data-aos="fade-up"
             data-aos-duration="1100"
             className="bg-gray-200 px-8 py-10 rounded-[35px] shadow-md col-span-1 md:col-span-2 lg:col-span-1"
@@ -71,42 +99,63 @@ const HeroContact = () => {
             >
               <input
                 type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
                 placeholder="Full Name"
                 className="border-2 border-[#2B3A8F] rounded-xl text-sm p-2 w-full"
+                required
               />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Email Address"
                 className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full"
+                required
               />
               <input
                 type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 placeholder="Phone Number"
                 className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full"
+                required
               />
               <input
                 type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
                 placeholder="Choose Subject"
                 className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full"
+                required
               />
             </div>
 
             <textarea
               data-aos="fade-up"
               data-aos-duration="1300"
+              value={formData.message}
+                onChange={handleChange}
               placeholder="Your Message"
+              name="message"
               rows={4}
               className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full mb-4"
+              required
             ></textarea>
 
             <button
+              type="submit"
               data-aos="fade-up"
               data-aos-duration="1400"
               className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-10 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit"
             >
-              Submit Now
+              Submit
             </button>
-          </div>
+          </form>
 
           {/* Location and Contact Info */}
           <div

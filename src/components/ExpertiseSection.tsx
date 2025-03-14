@@ -29,7 +29,7 @@ const ExpertiseSection: React.FC = () => {
           </p>
 
           <Button
-            navigateTo="Franchise Your Business"
+            navigateTo="/service#FranchiseYourBusiness"
             label="Explore Services"
           />
         
