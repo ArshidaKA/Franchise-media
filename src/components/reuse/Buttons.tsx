@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 
 export const TagButton = ({ label }:{label:string}) => {
   return (
@@ -24,14 +25,30 @@ export const TagButtonWithLine = ({ label }:{label:string}) => {
     );
 }
 
-export const Button = ({ label }: { label: string }) => {
+interface ButtonProps {
+  label: string;
+  clickHandle?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  navigateTo?: string | undefined;
+}
+
+
+export const Button = ({ label, clickHandle, navigateTo }: ButtonProps) => {
   return (
-    <button
-      data-aos="fade-up"
-      data-aos-duration="1400"
-      className="bg-green-500 contentFont hover:bg-green-600  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
+    <Link
+      to={navigateTo || ""}
+      smooth={true}
+      duration={500}
+      offset={-100}
+      spy={true}
     >
-      {label}
-    </button>
+      <button
+        onClick={clickHandle}
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        className="bg-green-500 contentFont hover:bg-green-600  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
+      >
+        {label}
+      </button>
+    </Link>
   );
 };

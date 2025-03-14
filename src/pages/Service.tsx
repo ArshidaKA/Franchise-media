@@ -10,6 +10,7 @@ export interface ExperienceDataType {
   tag: string;
   subTitle: string;
   list: string[];
+  navigateTo:string;
 }
 const experienceData: ExperienceDataType[] = [
   {
@@ -17,6 +18,7 @@ const experienceData: ExperienceDataType[] = [
     content:
       "If you have a successful business model, it’s important to pursue growth that is secure, sustainable, and requires less capital investment. To plan this process effectively, you will need expert guidance for different areas. Reach out to us for franchise consulting, development, implementation, marketing phase and discover how franchising can help you unlock new avenues for growth!",
     img: consult,
+    navigateTo: "Franchise Your Business",
     tag: "OUr services",
     subTitle: "Franchise Consulting Services",
     list: [
@@ -32,6 +34,7 @@ const experienceData: ExperienceDataType[] = [
     content:
       "If you have a successful business model, it’s important to pursue growth that is secure, sustainable, and requires less capital investment. To plan this process effectively, you will need expert guidance for different areas. Reach out to us for franchise consulting, development, implementation, marketing phase and discover how franchising can help you unlock new avenues for growth!",
     img: Existing,
+    navigateTo: "Franchise Marketing Service",
     tag: "Our services",
     subTitle: "Services for Existing Franchisors",
     list: [

@@ -1,4 +1,3 @@
-
 import {
   FaBriefcase,
 } from "react-icons/fa";
@@ -14,6 +13,7 @@ interface OurServiceProps {
     tag: string;
     subTitle: string;
     list: string[];
+    navigateTo:string;
   };
 }
 const OurService = ({ item }: OurServiceProps) => {
@@ -21,6 +21,7 @@ const OurService = ({ item }: OurServiceProps) => {
     <div>
       {/* Franchise Your Business Section */}
       <section
+      id={item.navigateTo}
         className={`max-w-7xl mx-auto ${
           item.title === "Franchise Marketing Service" ? "py-0" : "py-16"
         } px-4 md:px-8`}

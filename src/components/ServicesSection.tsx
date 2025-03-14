@@ -39,7 +39,10 @@ const ServicesSection: React.FC = () => {
               growth!
             </p>
 
-            <Button label="Explore Services" />
+            <Button
+              navigateTo="Franchise Marketing Service"
+              label="Explore Services"
+            />
           </div>
         </div>
 

@@ -28,7 +28,11 @@ const ExpertiseSection: React.FC = () => {
             discover how franchising can help you unlock new avenues for growth!
           </p>
 
-          <Button label="Explore Services" />
+          <Button
+            navigateTo="Franchise Your Business"
+            label="Explore Services"
+          />
+        
         </div>
         <div
           data-aos="fade-up"
