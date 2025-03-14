@@ -12,12 +12,12 @@ const FounderSection: React.FC = () => {
             className="max-w-md h-[30rem] rounded-lg mx-auto"
           />
         </div>
-        <div> 
+        <div>
           <TagButtonWithLine label="Founder’s Note" />
           <p
             data-aos="fade-up"
             data-aos-duration="1200"
-            className="text-gray-700 mb-8"
+            className="contentColor contentFont text-lg mb-8"
           >
             "The pioneering franchise consulting company in Kerala, Franchise
             Media, is dedicated to empowering entrepreneurs and businesses by
@@ -43,7 +43,7 @@ const FounderSection: React.FC = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="1200"
-            className="headingColor"
+            className="headingColor contentFont"
           >
             Founder - Franchise Media
           </p>

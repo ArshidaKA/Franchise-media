@@ -28,7 +28,7 @@ const ServicesSection: React.FC = () => {
             <p
               data-aos="fade-up"
               data-aos-duration="1300"
-              className="contentColor mb-8"
+              className="contentColor contentFont mb-8"
             >
               If you have a successful business model, it's important to pursue
               growth that is secure, sustainable, and requires less capital
@@ -57,7 +57,7 @@ const ServicesSection: React.FC = () => {
             <p
               data-aos="fade-up"
               data-aos-duration="1300"
-              className="contentColor mb-8"
+              className="contentColor contentFont mb-8"
             >
               Starting a new franchise can be an exciting yet challenging
               journey. As you embark on this venture, you may encounter various

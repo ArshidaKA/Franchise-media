@@ -48,7 +48,7 @@ const TestimonialsSection: React.FC = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="1300"
-            className="contentColor max-w-3xl "
+            className="contentColor contentFont max-w-3xl "
           >
             Discover the Success Stories and Satisfaction of Clients Who Have
             Benefited from Our Expertise and Personalized Financial Guidance
@@ -63,7 +63,7 @@ const TestimonialsSection: React.FC = () => {
               key={index}
               className={`${
                 testimonial.bg === true
-                  ? "bg-[rgb(43,58,143)] text-white"
+                  ? "bg-gradient-to-b from-[#2b3a8f] to-[#0c1129]  text-white"
                   : "bg-white contentColor"
               } p-6 rounded-tl-[35px] rounded-br-[35px] border-2 border-blue-800 flex flex-col h-full`}
             >
@@ -77,10 +77,10 @@ const TestimonialsSection: React.FC = () => {
                 </div>
                 <div className="">
                   <h4 className="font-bold ">{testimonial.name}</h4>
-                  <p className=" text-sm">{testimonial.title}</p>
+                  <p className=" text-sm contentFont">{testimonial.title}</p>
                 </div>
               </div>
-              <p className=" flex-grow">{testimonial.quote}</p>
+              <p className=" flex-grow contentFont">{testimonial.quote}</p>
               <div className="text-blue-300 mt-4 text-right">
                 <FaQuoteRight size={24} />
               </div>

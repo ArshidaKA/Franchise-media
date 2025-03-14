@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="1300"
-            className="mt-6 contentColor text-lg mb-6"
+            className="mt-6 contentColor contentFont text-lg mb-6"
           >
             Empowering your journey to global financial success through
             customised and personalised financial Consulting for every client

@@ -30,15 +30,13 @@ const Navbar: React.FC = () => {
 
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-12">
-          {path.map((item,i) =>
-          <Link key={i} to={item.path} >
-            <li
-              className="text-gray-900 hover:text-blue-700 font-medium"
-            >
-              {item.name}
-            </li>
-          </Link>
-           )}
+          {path.map((item, i) => (
+            <Link key={i} to={item.path}>
+              <li className="text-gray-900  contentFont hover:text-blue-700 font-medium">
+                {item.name}
+              </li>
+            </Link>
+          ))}
         </ul>
 
         {/* Mobile menu */}
