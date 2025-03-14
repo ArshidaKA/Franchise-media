@@ -9,11 +9,19 @@ const FranchiseServices: React.FC = () => {
       <div className="flex flex-col items-center pb-6 ">
         <div className=" flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold headingColor  mb-4">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              className="text-3xl md:text-4xl font-bold headingColor  mb-4"
+            >
               Start Your Own Franchise Business?
             </h2>
 
-            <p className="contentColor text-lg contentFont leading-relaxed mb-8">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              className="contentColor text-lg contentFont leading-relaxed mb-8"
+            >
               Starting a new franchise can be an exciting yet challenging
               journey. As you embark on this venture, you may encounter various
               matters. Having the right support can make a significant
@@ -22,7 +30,11 @@ const FranchiseServices: React.FC = () => {
             </p>
           </div>
 
-          <div className="md:w-1/2 relative">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="md:w-1/2 relative will-change-transform"
+          >
             <Lottie
               loop
               animationData={Business}
@@ -31,11 +43,15 @@ const FranchiseServices: React.FC = () => {
             />
           </div>
         </div>
-        <div className="space-y-6">
+        <div data-aos="fade-up" data-aos-duration="1400" className="space-y-6">
           <h3 className="text-3xl md:text-4xl font-bold headingColor mb-6">
             Service we offered
           </h3>
-          <div className="flex items-start">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1300"
+            className="flex items-start"
+          >
             <div className="bg-blue-100 p-2 rounded-sm mr-4 mt-1">
               <FaHandshake className="headingColor text-xl" />
             </div>
@@ -52,7 +68,11 @@ const FranchiseServices: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-start">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            className="flex items-start"
+          >
             <div className="bg-blue-100 p-2 rounded-sm mr-4 mt-1">
               <FaHandshake className="headingColor text-xl" />
             </div>
@@ -68,7 +88,11 @@ const FranchiseServices: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-start">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="flex items-start"
+          >
             <div className="bg-blue-100 p-2 rounded-sm mr-4 mt-1">
               <FaHandshake className="headingColor text-xl" />
             </div>

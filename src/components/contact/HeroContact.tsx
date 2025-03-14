@@ -4,14 +4,22 @@ const HeroContact = () => {
   return (
     <div>
       {/* Contact Us Section */}
-      <section className="max-w-7xl mx-auto py-16  ">
-        <h2 className=" text-3xl md:text-4xl font-bold headingColor mb-8">
+      <section className="max-w-7xl mx-auto py-16 px-6 md:px-12 lg:px-20  ">
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          className=" text-3xl md:text-4xl font-bold headingColor mb-8"
+        >
           Contact US
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {/* WhatsApp Card */}
-          <div className="border-2 border-[#2B3A8F] py-10 p-6 rounded-[35px]  flex flex-col items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1300"
+            className="border-2 border-[#2B3A8F] py-10 p-6 rounded-[35px]  flex flex-col items-center"
+          >
             <div className=" p-4 rounded-full mb-4">
               <img src="/contact/whatsapp.png" className="w-32 h-32" alt="" />
             </div>
@@ -25,7 +33,11 @@ const HeroContact = () => {
           </div>
 
           {/* Email Card */}
-          <div className="border-2 border-[#2B3A8F] py-10 p-6 rounded-[35px]  flex flex-col items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            className="border-2 border-[#2B3A8F] py-10 p-6 rounded-[35px]  flex flex-col items-center"
+          >
             <div className=" p-4 rounded-full mb-4">
               <img src="/contact/email.png" className="w-32 h-32" alt="" />
             </div>
@@ -39,12 +51,24 @@ const HeroContact = () => {
           </div>
 
           {/* Feedback Form */}
-          <div className="bg-gray-200 px-8 py-10 rounded-[35px] shadow-md col-span-1 md:col-span-2 lg:col-span-1">
-            <h3 className="text-2xl font-semibold text-indigo-800 mb-4 text-center">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            className="bg-gray-200 px-8 py-10 rounded-[35px] shadow-md col-span-1 md:col-span-2 lg:col-span-1"
+          >
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              className="text-2xl font-semibold text-indigo-800 mb-4 text-center"
+            >
               Your valuable feedback
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mb-4">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              className="grid grid-cols-1 md:grid-cols-2  gap-4 mb-4"
+            >
               <input
                 type="text"
                 placeholder="Full Name"
@@ -68,18 +92,28 @@ const HeroContact = () => {
             </div>
 
             <textarea
+              data-aos="fade-up"
+              data-aos-duration="1300"
               placeholder="Your Message"
               rows={4}
               className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full mb-4"
             ></textarea>
 
-            <button className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-10 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
+            <button
+              data-aos="fade-up"
+              data-aos-duration="1400"
+              className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-10 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit"
+            >
               Submit Now
             </button>
           </div>
 
           {/* Location and Contact Info */}
-          <div className=" border-2 border-[#2B3A8F] p-6 h-40 rounded-3xl max-w-md ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            className=" border-2 border-[#2B3A8F] p-6 h-40 rounded-3xl max-w-md "
+          >
             <div className="flex items-start mb-4 gap-2">
               <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
               <div>
