@@ -21,7 +21,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className="w-full py-4 px-6 md:px-12 lg:px-20 bg-white ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <Link to='/'>
         <img src="/logo/logo.png" className=" h-20" alt="logo-image" />
+        </Link>
 
         {/* Mobile menu button */}
         <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
@@ -32,9 +34,15 @@ const Navbar: React.FC = () => {
         <ul className="hidden md:flex space-x-12">
           {path.map((item, i) => (
             <Link key={i} to={item.path}>
-              <li className="text-gray-900  contentFont hover:text-blue-700 font-medium">
+              <li
+                className={`  contentFont ${
+                  item.path === window.location.pathname
+                    ? "text-blue-700"
+                    : "text-gray-900"
+                } hover:text-blue-700 font-medium`}
+              >
                 {item.name}
-              </li>
+              </li>  
             </Link>
           ))}
         </ul>
