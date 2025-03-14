@@ -119,7 +119,7 @@ const Hero = () => {
           Media
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center ">
           {/* Large Image */}
           <div
             data-aos="fade-up"
@@ -130,13 +130,13 @@ const Hero = () => {
               <img
                 src={mainImage}
                 alt="Main media"
-                className="lg:w-[40rem] w-full h-[20rem] lg:h-[30rem] rounded-4xl object-cover"
+                className="lg:w-[35rem] w-full h-[20rem] lg:h-[33rem] rounded-4xl "
               />
             </div>
           </div>
 
           {/* Small Images Column */}
-          <div className="grid grid-cols-2 scrollBar lg:grid-cols-1 gap-2 h-[21rem] lg:h-[28rem] overflow-y-scroll">
+          <div className="grid grid-cols-2 scrollBar md:grid-cols-1 gap-2 h-[21rem] lg:h-[28rem] overflow-y-scroll">
             {smallImages.map((image, index) => (
               <div
                 key={index}

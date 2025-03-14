@@ -176,13 +176,13 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4 mb-4">
               <img src="/contact/call.png" className="w-8 h-8" alt="call" />
               <div>
                 <h4 className="text-sm contentFont font-semibold headingColor">
                   Contact
                 </h4>
-                <p className="text-sm contentFont contentColor">
+                <p className="text-sm contentFont contentColor ">
                   +91 9999799999
                 </p>
               </div>

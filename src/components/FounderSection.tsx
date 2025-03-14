@@ -9,7 +9,7 @@ const FounderSection: React.FC = () => {
           <img
             src="/home/founder.png"
             alt="Mr. Safwan CK"
-            className=" h-[30rem] rounded-lg mx-auto"
+            className=" h-[30rem] rounded-lg mx-auto object-cover"
           />
         </div>
         <div className="mt-8 md:mt-0">
