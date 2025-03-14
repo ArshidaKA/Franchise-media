@@ -25,3 +25,36 @@ text-base lg:text-lg */
 .contentColor{
     color: #575757;
 }
+
+
+/* Custom Scrollbar */
+.scrollBar::-webkit-scrollbar {
+  width: 8px; /* Width of vertical scrollbar */
+  height: 8px; /* Height of horizontal scrollbar */
+}
+
+/* Track */
+.scrollBar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 10px;
+}
+
+/* Handle */
+.scrollBar::-webkit-scrollbar-thumb {
+  background: #888; /* Darker gray */
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollBar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Even darker gray */
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

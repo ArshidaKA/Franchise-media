@@ -1,18 +1,34 @@
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Hero = () => {
+  // State for the main media image
+  const [mainImage, setMainImage] = useState("/gallery/2.png");
 
-
+  // List of small images
+  const smallImages = [
+    "/gallery/14.png",
+    "/gallery/3.png",
+    "/gallery/4.png",
+    "/gallery/5.png",
+    "/gallery/6.png",
+    "/gallery/7.png",
+    "/gallery/8.png",
+    "/gallery/9.png",
+    "/gallery/10.png",
+    "/gallery/11.png",
+    "/gallery/12.png",
+    "/gallery/13.png",
+  ];
 
   return (
     <div className="max-w-7xl px-6 md:px-12 lg:px-20 mx-auto py-16">
       {/* Blog Section */}
-      <section className="mb-16 ">
+      <section className="mb-16">
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
-          className="text-2xl lg:text-3xl  font-bold headingColor mb-2"
+          className="text-2xl lg:text-3xl font-bold headingColor mb-2"
         >
           Blog
         </h2>
@@ -103,62 +119,42 @@ const Hero = () => {
           Media
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {/* Large Image */}
           <div
             data-aos="fade-up"
             data-aos-duration="1300"
             className="md:col-span-2"
           >
-            <div className="rounded-4xl   ">
+            <div className="rounded-4xl">
               <img
-                src="/blog/bottomMain.png"
-                alt="Person with camera"
-                className="lg:w-[40rem] w-full   object-cover"
+                src={mainImage}
+                alt="Main media"
+                className="lg:w-[40rem] w-full h-[20rem] lg:h-[30rem] rounded-4xl object-cover"
               />
             </div>
           </div>
 
           {/* Small Images Column */}
-          <div className="space-y-2 ">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              className=" rounded-4xl overflow-hidden shadow-md"
-            >
-              <img
-                src="/blog/bottom01.png"
-                alt="Sunset landscape"
-                className="w-full h-40 object-cover"
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1300"
-              className="bg-gray-100 rounded-4xl overflow-hidden shadow-md"
-            >
-              <img
-                src="/blog/bottom02.png"
-                alt="Tree at sunset"
-                className="w-full h-40 object-cover"
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1400"
-              className="bg-gray-100 rounded-4xl overflow-hidden shadow-md"
-            >
-              <img
-                src="/blog/bottom03.png"
-                alt="Field at sunset"
-                className="w-full h-40 object-cover"
-              />
-            </div>
+          <div className="grid grid-cols-2 scrollBar lg:grid-cols-1 gap-2 h-[21rem] lg:h-[28rem] overflow-y-scroll">
+            {smallImages.map((image, index) => (
+              <div
+                key={index}
+                className="rounded-4xl overflow-hidden h-36 shadow-md cursor-pointer"
+                onClick={() => setMainImage(image)}
+              >
+                <img
+                  src={image}
+                  alt={`Thumbnail ${index + 1}`}
+                  className="w-full h-40 object-cover rounded-4xl"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;
