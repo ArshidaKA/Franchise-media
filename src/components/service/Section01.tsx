@@ -7,7 +7,7 @@ const FranchiseServices: React.FC = () => {
   return (
     <section
       id="StartYourOwnFranchiseBusiness"
-      className="max-w-7xl mx-auto pb-16 px-4 md:px-8"
+      className="max-w-7xl mx-auto pb-16 mt-20 lg:mt-0 px-4 md:px-8"
     >
       <div className="flex flex-col items-center pb-6 ">
         <div className=" flex flex-col md:flex-row items-center gap-8">
@@ -15,7 +15,7 @@ const FranchiseServices: React.FC = () => {
             <h2
               data-aos="fade-up"
               data-aos-duration="1100"
-              className="text-3xl md:text-4xl font-bold headingColor  mb-4"
+              className="text-2xl md:text-4xl font-bold headingColor  mb-4"
             >
               Start Your Own Franchise Business?
             </h2>
@@ -23,7 +23,7 @@ const FranchiseServices: React.FC = () => {
             <p
               data-aos="fade-up"
               data-aos-duration="1300"
-              className="contentColor text-lg contentFont leading-relaxed mb-8"
+              className="contentColor text-base lg:text-lg contentFont leading-relaxed mb-8"
             >
               Starting a new franchise can be an exciting yet challenging
               journey. As you embark on this venture, you may encounter various
@@ -47,7 +47,7 @@ const FranchiseServices: React.FC = () => {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1400" className="space-y-6">
-          <h3 className="text-3xl md:text-4xl font-bold headingColor mb-6">
+          <h3 className="text-2xl md:text-4xl font-bold headingColor mb-6">
             Service we offered
           </h3>
           <div

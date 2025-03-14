@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden fixed top-0 h-screen left-0 right-0 bg-gray-300 z-[99999] shadow-md">
+          <div className="md:hidden fixed top-0 h-screen left-0 right-0 bg-white z-[99999] shadow-md">
             <button
               className="absolute top-4 right-8 text-gray-900"
               onClick={toggleMenu}

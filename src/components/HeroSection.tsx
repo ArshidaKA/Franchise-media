@@ -15,19 +15,22 @@ const HeroSection: React.FC = () => {
           <h1
             data-aos="fade-up"
             data-aos-duration="1100"
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold headingColor leading-tight"
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold headingColor leading-tight"
           >
             A Thriving Platform for Business Expertise!
           </h1>
           <p
             data-aos="fade-up"
             data-aos-duration="1300"
-            className="mt-6 contentColor contentFont text-lg mb-6"
+            className="mt-6 contentColor contentFont text-base lg:text-lg mb-6"
           >
             Empowering your journey to global financial success through
             customised and personalised financial Consulting for every client
           </p>
-          <Button clickHandle={openPopup} label="Request for a free consultation" />
+          <Button
+            clickHandle={openPopup}
+            label="Request for a free consultation"
+          />
         </div>
         <div
           data-aos="fade-up"

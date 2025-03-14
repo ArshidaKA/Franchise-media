@@ -9,7 +9,7 @@ export default function SafeOption() {
       </div>
 
       {/* Blog Title */}
-      <h1 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">
+      <h1 className="text-2xl md:text-4xl font-bold text-indigo-400 mb-6">
         Why Franchising Is the Safer Option
       </h1>
 
@@ -23,7 +23,7 @@ export default function SafeOption() {
       </div>
 
       {/* Blog Content */}
-      <div className="space-y-4 contentColor contentFont text-lg leading-relaxed">
+      <div className="space-y-4 contentColor contentFont text-base lg:text-lg leading-relaxed">
         <p>
           Startup culture is taking over the modern world and is quickly
           becoming a popular choice for youngsters. A great place to start your

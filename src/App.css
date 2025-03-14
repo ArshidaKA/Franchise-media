@@ -11,6 +11,8 @@ body{
 }
 /* text-3xl md:text-4xl */
 /* text-lg */
+/* text-2xl 
+text-base lg:text-lg */
 .color{
     color: #1A202C;
 }

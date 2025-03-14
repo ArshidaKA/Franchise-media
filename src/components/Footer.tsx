@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           {/* Contact Details */}
           <div className="flex  gap-20">
             <div>
-              <h3 className="font-bold text-xl mb-4">Quick Links</h3>
+              <h3 className="font-bold text-lg lg:text-xl mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 {path.map((item, i) => (
                   <Link key={i} to={item.path}>
@@ -38,7 +38,9 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-4">Contact Details</h3>
+              <h3 className="font-bold text-lg lg:text-xl mb-4">
+                Contact Details
+              </h3>
               <p className="mb-2">contact@infofin.com</p>
               <p>+1 (555) 123-4567</p>
             </div>
@@ -76,10 +78,16 @@ const Footer: React.FC = () => {
         <div className="flex contentFont flex-col md:flex-row justify-between items-center">
           <p>Franchise Media © All rights reserved</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-blue-300 transition duration-300">
+            <a
+              href="#"
+              className="hover:text-blue-300 text-base lg:text-lg transition duration-300"
+            >
               Terms & Conditions
             </a>
-            <a href="#" className="hover:text-blue-300 transition duration-300">
+            <a
+              href="#"
+              className="hover:text-blue-300 text-base lg:text-lg transition duration-300"
+            >
               Privacy Policy
             </a>
           </div>

@@ -35,7 +35,7 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
-          className=" text-3xl md:text-4xl font-bold headingColor mb-8"
+          className=" text-2xl md:text-4xl font-bold headingColor mb-8"
         >
           Contact US
         </h2>
@@ -50,7 +50,7 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
             <div className=" p-4 rounded-full mb-4">
               <img src="/contact/whatsapp.png" className="w-32 h-32" alt="" />
             </div>
-            <p className="text-center contentColor contentColor contentFont text-lg  mb-4">
+            <p className="text-center contentColor contentColor contentFont text-base lg:text-lg  mb-4">
               Connect with us to explore tailored franchise opportunities and
               get your queries addressed
             </p>
@@ -68,7 +68,7 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
             <div className=" p-4 rounded-full mb-4">
               <img src="/contact/email.png" className="w-32 h-32" alt="" />
             </div>
-            <p className="text-center contentColor contentColor contentFont text-lg mb-4">
+            <p className="text-center contentColor contentColor contentFont text-base lg:text-lg mb-4">
               Contact us via email to explore exclusive franchise opportunities
               and share your inquiries with our team
             </p>
@@ -139,7 +139,7 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
               data-aos="fade-up"
               data-aos-duration="1300"
               value={formData.message}
-                onChange={handleChange}
+              onChange={handleChange}
               placeholder="Your Message"
               name="message"
               rows={4}

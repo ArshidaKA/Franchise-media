@@ -4,12 +4,12 @@ import { TagButtonWithLine } from "./reuse/Buttons";
 const FounderSection: React.FC = () => {
   return (
     <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2  items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 lg:gap-0 items-center">
         <div data-aos="fade-up" data-aos-duration="1400">
           <img
             src="/home/founder.png"
             alt="Mr. Safwan CK"
-            className="max-w-md h-[30rem] rounded-lg mx-auto"
+            className=" h-[30rem] rounded-lg mx-auto"
           />
         </div>
         <div className="mt-8 md:mt-0">
@@ -17,7 +17,7 @@ const FounderSection: React.FC = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="1200"
-            className="contentColor contentFont text-lg mb-8"
+            className="contentColor contentFont text-base lg:text-lg mb-8"
           >
             "The pioneering franchise consulting company in Kerala, Franchise
             Media, is dedicated to empowering entrepreneurs and businesses by

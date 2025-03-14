@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const TagButton = ({ label }:{label:string}) => {
   return (
-    <div className="bg-blue-100 contentFont text-blue-700 px-4 py-1 uppercase w-fit rounded-sm text-sm font-medium ">
+    <div className="bg-blue-100 contentFont text-blue-700 px-4 py-1 uppercase w-fit rounded-sm text-sm font-medium lg:text-base  ">
       {label}
     </div>
   );
@@ -35,13 +35,11 @@ interface ButtonProps {
 export const Button = ({ label, clickHandle, navigateTo }: ButtonProps) => {
   if (navigateTo) {
     return (
-      <Link
-        to={navigateTo}
-      >
+      <Link to={navigateTo}>
         <button
           data-aos="fade-up"
           data-aos-duration="1400"
-          className="bg-green-500 contentFont hover:bg-green-600  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
+          className="bg-green-500 contentFont hover:bg-green-600 text-base lg:text-lg  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
         >
           {label}
         </button>
@@ -53,7 +51,7 @@ export const Button = ({ label, clickHandle, navigateTo }: ButtonProps) => {
       onClick={clickHandle}
       data-aos="fade-up"
       data-aos-duration="1400"
-      className="bg-green-500 contentFont hover:bg-green-600  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
+      className="bg-green-500 contentFont hover:bg-green-600 text-base lg:text-lg  font-medium py-3 px-6 rounded-lg cursor-pointer transition duration-300 w-fit"
     >
       {label}
     </button>

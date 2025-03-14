@@ -7,7 +7,7 @@ export default function Franchisable() {
       </div>
 
       {/* Blog Title */}
-      <h1 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">
+      <h1 className="text-2xl md:text-4xl font-bold text-indigo-400 mb-6">
         Is My Business Franchisable
       </h1>
 
@@ -21,7 +21,7 @@ export default function Franchisable() {
       </div>
 
       {/* Blog Content */}
-      <div className="space-y-4 contentColor  contentFont text-lg leading-relaxed">
+      <div className="space-y-4 contentColor  contentFont text-base lg:text-lg leading-relaxed">
         <p>
           The franchise industry, although a relatively new concept in India, is
           making a significant mark in the market. For many business owners,
@@ -142,12 +142,12 @@ export default function Franchisable() {
           It is important that the franchise fee is not overly-expensive as it
           would limit the number of franchisees buying into your network. The
           franchise fee and royalties must be reasonable and affordable to you
-          as well as the franchisee. <br/> <br/> To determine what is right for the growth
-          of your business, it is important to evaluate these franchisability
-          factors. Having an open discussion with your franchise consultant can
-          help you map out the best way to achieve your franchise growth goals.
-          With the right plan, execution and trusted consultants, the benefits
-          of franchising your business can be spectacular.
+          as well as the franchisee. <br /> <br /> To determine what is right
+          for the growth of your business, it is important to evaluate these
+          franchisability factors. Having an open discussion with your franchise
+          consultant can help you map out the best way to achieve your franchise
+          growth goals. With the right plan, execution and trusted consultants,
+          the benefits of franchising your business can be spectacular.
         </p>
       </div>
     </div>

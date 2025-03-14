@@ -11,7 +11,7 @@ const WhoAreWe: React.FC = () => {
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
-          className="text-3xl md:text-4xl font-bold text-center headingColor mb-8"
+          className="text-2xl md:text-4xl font-bold text-center headingColor mb-8"
         >
           Who Are we?
         </h2>
@@ -19,7 +19,7 @@ const WhoAreWe: React.FC = () => {
         <p
           data-aos="fade-up"
           data-aos-duration="1300"
-          className="text-center contentFont text-lg max-w-4xl mx-auto contentColor leading-relaxed"
+          className="text-center contentFont text-base lg:text-lg max-w-4xl mx-auto contentColor leading-relaxed"
         >
           <span className="font-bold  headingColor">Franchise Media</span>, is
           the first franchise business provider & consultant in Kerala, which is
@@ -49,14 +49,14 @@ const WhoAreWe: React.FC = () => {
             <h2
               data-aos="fade-up"
               data-aos-duration="1100"
-              className="text-3xl md:text-4xl font-bold headingColor mb-6"
+              className="text-2xl md:text-4xl font-bold headingColor mb-6"
             >
               A Bunch of Expert Teams!
             </h2>
             <p
               data-aos="fade-up"
               data-aos-duration="1300"
-              className="contentColor contentFont text-lg leading-relaxed"
+              className="contentColor contentFont text-base lg:text-lg leading-relaxed"
             >
               We have experts by innovative ideas and extensive experience in
               the field of franchise consulting. Our team consists of business
@@ -89,14 +89,14 @@ const WhoAreWe: React.FC = () => {
             <h2
               data-aos="fade-up"
               data-aos-duration="1200"
-              className="text-3xl md:text-4xl  font-bold mb-6"
+              className="text-2xl md:text-4xl   font-bold mb-6"
             >
               Vision
             </h2>
             <p
               data-aos="fade-up"
               data-aos-duration="1400"
-              className="text-gray-700 text-lg contentFont leading-relaxed"
+              className="text-gray-700 text-base lg:text-lg contentFont leading-relaxed"
             >
               Our vision is to make the dream of entrepreneurship accessible to
               every like-minded individual and Catalyse franchising globally
@@ -114,14 +114,14 @@ const WhoAreWe: React.FC = () => {
             <h2
               data-aos="fade-up"
               data-aos-duration="1200"
-              className="text-3xl md:text-4xl font-bold mb-6"
+              className="text-2xl md:text-4xl font-bold mb-6"
             >
               Mission
             </h2>
             <p
               data-aos="fade-up"
               data-aos-duration="1400"
-              className="text-gray-700 text-lg contentFont leading-relaxed"
+              className="text-gray-700 text-base lg:text-lg contentFont leading-relaxed"
             >
               Our mission is to collaborate with business experts, franchisees,
               and all stakeholders, enhancing their productivity and developing

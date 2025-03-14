@@ -11,14 +11,14 @@ const ExpertiseSection: React.FC = () => {
           <h2
             data-aos="fade-up"
             data-aos-duration="1100"
-            className="text-3xl md:text-4xl font-bold headingColor mb-6"
+            className="text-2xl md:text-4xl font-bold headingColor mb-6"
           >
             Franchise Your Business?
           </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="1300"
-            className="contentColor contentFont mb-8"
+            className="contentColor text-base lg:text-lg contentFont mb-8"
           >
             If you have a successful business model, it's important to pursue
             growth that is secure, sustainable, and requires less capital
@@ -32,7 +32,6 @@ const ExpertiseSection: React.FC = () => {
             navigateTo="/service#FranchiseYourBusiness"
             label="Explore Services"
           />
-        
         </div>
         <div
           data-aos="fade-up"

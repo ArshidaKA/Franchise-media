@@ -12,14 +12,14 @@ const Hero = () => {
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
-          className="text-3xl  font-bold headingColor mb-2"
+          className="text-2xl lg:text-3xl  font-bold headingColor mb-2"
         >
           Blog
         </h2>
         <h3
           data-aos="fade-up"
           data-aos-duration="1200"
-          className="text-3xl md:text-4xl font-bold text-indigo-400 mb-8"
+          className="text-2xl md:text-4xl font-bold text-indigo-400 mb-8"
         >
           News, insights and more
         </h3>
@@ -49,7 +49,7 @@ const Hero = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="1400"
-                className="contentColor contentFont text-lg"
+                className="contentColor contentFont text-base lg:text-lg"
               >
                 Startup culture is taking over the modern world and is quickly
                 becoming a popular choice for youngsters. A great place to start
@@ -82,7 +82,7 @@ const Hero = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="1400"
-                className="contentColor contentFont text-lg"
+                className="contentColor contentFont text-base lg:text-lg"
               >
                 The franchise industry, although a relatively new concept in
                 India, is making a significant mark in the market. For many
@@ -98,7 +98,7 @@ const Hero = () => {
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
-          className="text-3xl md:text-4xl font-bold text-indigo-400 mb-8"
+          className="text-2xl md:text-4xl font-bold text-indigo-400 mb-8"
         >
           Media
         </h2>
@@ -143,8 +143,11 @@ const Hero = () => {
                 className="w-full h-40 object-cover"
               />
             </div>
-            <div data-aos="fade-up"
-              data-aos-duration="1400" className="bg-gray-100 rounded-4xl overflow-hidden shadow-md">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1400"
+              className="bg-gray-100 rounded-4xl overflow-hidden shadow-md"
+            >
               <img
                 src="/blog/bottom03.png"
                 alt="Field at sunset"

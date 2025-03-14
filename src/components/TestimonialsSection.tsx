@@ -41,14 +41,14 @@ const TestimonialsSection: React.FC = () => {
           <h2
             data-aos="fade-up"
             data-aos-duration="1100"
-            className="text-3xl md:text-4xl font-bold headingColor mb-4"
+            className="text-2xl md:text-4xl font-bold headingColor mb-4"
           >
             What Our Customers Say
           </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="1300"
-            className="contentColor contentFont max-w-3xl "
+            className="contentColor text-base lg:text-lg contentFont max-w-3xl "
           >
             Discover the Success Stories and Satisfaction of Clients Who Have
             Benefited from Our Expertise and Personalized Financial Guidance
@@ -76,11 +76,13 @@ const TestimonialsSection: React.FC = () => {
                   />
                 </div>
                 <div className="">
-                  <h4 className="font-bold ">{testimonial.name}</h4>
+                  <h4 className="font-bold text-base ">{testimonial.name}</h4>
                   <p className=" text-sm contentFont">{testimonial.title}</p>
                 </div>
               </div>
-              <p className=" flex-grow contentFont">{testimonial.quote}</p>
+              <p className=" flex-grow text-base lg:text-lg contentFont">
+                {testimonial.quote}
+              </p>
               <div className="text-blue-300 mt-4 text-right">
                 <FaQuoteRight size={24} />
               </div>
