@@ -4,8 +4,10 @@ const HeroContact = () => {
   return (
     <div>
       {/* Contact Us Section */}
-      <section className="max-w-6xl mx-auto py-16  ">
-        <h2 className="text-2xl font-bold text-[#2B3A8F] mb-8">Contact US</h2>
+      <section className="max-w-7xl mx-auto py-16  ">
+        <h2 className=" text-3xl md:text-4xl font-bold headingColor mb-8">
+          Contact US
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {/* WhatsApp Card */}
@@ -13,11 +15,11 @@ const HeroContact = () => {
             <div className=" p-4 rounded-full mb-4">
               <img src="/contact/whatsapp.png" className="w-32 h-32" alt="" />
             </div>
-            <p className="text-center text-gray-700 mb-4">
+            <p className="text-center contentColor contentColor contentFont text-lg  mb-4">
               Connect with us to explore tailored franchise opportunities and
               get your queries addressed
             </p>
-            <button className="bg-[#2B3A8F] cursor-pointer text-white py-2 px-8 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
+            <button className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-8 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
               WhatsApp
             </button>
           </div>
@@ -27,18 +29,18 @@ const HeroContact = () => {
             <div className=" p-4 rounded-full mb-4">
               <img src="/contact/email.png" className="w-32 h-32" alt="" />
             </div>
-            <p className="text-center text-gray-700 mb-4">
+            <p className="text-center contentColor contentColor contentFont text-lg mb-4">
               Contact us via email to explore exclusive franchise opportunities
               and share your inquiries with our team
             </p>
-            <button className="bg-[#2B3A8F] cursor-pointer text-white py-2 px-8 rounded-lg  hover:bg-indigo-900 transition duration-300 w-fit">
+            <button className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-8 rounded-lg  hover:bg-indigo-900 transition duration-300 w-fit">
               Send Email
             </button>
           </div>
 
           {/* Feedback Form */}
           <div className="bg-gray-200 px-8 py-10 rounded-[35px] shadow-md col-span-1 md:col-span-2 lg:col-span-1">
-            <h3 className="text-xl font-semibold text-indigo-800 mb-4 text-center">
+            <h3 className="text-2xl font-semibold text-indigo-800 mb-4 text-center">
               Your valuable feedback
             </h3>
 
@@ -46,32 +48,32 @@ const HeroContact = () => {
               <input
                 type="text"
                 placeholder="Full Name"
-                className="border-2 border-[#2B3A8F] rounded-xl p-2 w-full"
+                className="border-2 border-[#2B3A8F] rounded-xl text-sm p-2 w-full"
               />
               <input
                 type="email"
                 placeholder="Email Address"
-                className="border-2 border-[#2B3A8F] rounded-xl p-2 w-full"
+                className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full"
               />
               <input
                 type="text"
                 placeholder="Phone Number"
-                className="border-2 border-[#2B3A8F] rounded-xl p-2 w-full"
+                className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full"
               />
               <input
                 type="text"
                 placeholder="Choose Subject"
-                className="border-2 border-[#2B3A8F] rounded-xl p-2 w-full"
+                className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full"
               />
             </div>
 
             <textarea
               placeholder="Your Message"
               rows={4}
-              className="border-2 border-[#2B3A8F] rounded-xl p-2 w-full mb-4"
+              className="border-2 border-[#2B3A8F] text-sm contentFont rounded-xl p-2 w-full mb-4"
             ></textarea>
 
-            <button className="bg-[#2B3A8F] cursor-pointer text-white py-2 px-10 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
+            <button className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-10 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
               Submit Now
             </button>
           </div>
@@ -81,10 +83,10 @@ const HeroContact = () => {
             <div className="flex items-start mb-4 gap-2">
               <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
               <div>
-                <h4 className="text-sm font-semibold text-indigo-800">
+                <h4 className="text-sm contentFont font-semibold headingColor">
                   Location
                 </h4>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm contentFont contentColor">
                   #6/118 Balram Park, 14th 4th Cross, Thondayad, Kozhikode,
                   Kerala 673014
                 </p>
@@ -94,10 +96,12 @@ const HeroContact = () => {
             <div className="flex items-start gap-4">
               <img src="/contact/call.png" className="w-8 h-8" alt="call" />
               <div>
-                <h4 className="text-sm font-semibold text-indigo-800">
+                <h4 className="text-sm contentFont font-semibold headingColor">
                   Contact
                 </h4>
-                <p className="text-sm text-gray-700">+91 9999799999</p>
+                <p className="text-sm contentFont contentColor">
+                  +91 9999799999
+                </p>
               </div>
             </div>
           </div>

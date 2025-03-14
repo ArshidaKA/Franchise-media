@@ -7,7 +7,7 @@ const WhoAreWe: React.FC = () => {
   return (
     <div className="font-sans">
       {/* Who Are We Section */}
-      <section className="max-w-6xl mx-auto py-16 px-4 md:px-8">
+      <section className="max-w-7xl mx-auto py-16 px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center headingColor mb-8">
           Who Are we?
         </h2>

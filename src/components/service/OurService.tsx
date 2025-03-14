@@ -3,6 +3,7 @@ import {
   FaBriefcase,
 } from "react-icons/fa";
 import Lottie from "react-lottie-player";
+import {  TagButtonWithLine } from "../reuse/Buttons";
 
 
 interface OurServiceProps {
@@ -20,15 +21,15 @@ const OurService = ({ item }: OurServiceProps) => {
     <div>
       {/* Franchise Your Business Section */}
       <section
-        className={`max-w-6xl mx-auto ${
+        className={`max-w-7xl mx-auto ${
           item.title === "Franchise Marketing Service" ? "py-0" : "py-16"
         } px-4 md:px-8`}
       >
-        <h2 className="text-3xl font-bold text-center text-indigo-800 mb-8">
+        <h2 className="text-3xl md:text-4xl  font-bold text-center headingColor mb-8">
           {item.title}
         </h2>
 
-        <p className="text-center max-w-4xl mx-auto text-gray-700 leading-relaxed mb-4 ">
+        <p className="text-center max-w-4xl mx-auto text-lg contentColor contentFont leading-relaxed contentColor mb-4 ">
           {item.content}
         </p>
 
@@ -43,11 +44,9 @@ const OurService = ({ item }: OurServiceProps) => {
           </div>
 
           <div className="md:w-1/2">
-            <div className="inline-block uppercase bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-semibold mb-4">
-              {item.tag}
-            </div>
+            <TagButtonWithLine label={item.tag} />
 
-            <h3 className="text-2xl font-bold text-indigo-800 mb-6">
+            <h3 className="text-3xl md:text-4xl font-bold headingColor mb-6">
               {item.subTitle}
             </h3>
 
@@ -55,9 +54,11 @@ const OurService = ({ item }: OurServiceProps) => {
               {item.list.map((item: string, index: number) => (
                 <li key={index} className="flex items-center">
                   <div className="bg-indigo-100 p-2 rounded-md mr-3">
-                    <FaBriefcase className="text-indigo-800" />
+                    <FaBriefcase className="headingColor" />
                   </div>
-                  <span>{item}</span>
+                  <span className="text-lg contentColor contentFont">
+                    {item}
+                  </span>
                 </li>
               ))}
             </ul>
