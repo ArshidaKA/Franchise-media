@@ -23,21 +23,21 @@ const OurService = ({ item }: OurServiceProps) => {
       <section
         id={item.navigateTo}
         className={`max-w-7xl mx-auto ${
-          item.title === "Franchise Marketing Service" ? "py-0" : "py-16"
+          item.title === "Franchise Marketing Service" ? "pt-0" : "pt-16"
         } px-4 md:px-8`}
-      >
+      >   
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
           className="text-2xl md:text-4xl  font-bold text-center headingColor mb-8"
         >
           {item.title}
-        </h2>
+        </h2>           
 
         <p
           data-aos="fade-up"
           data-aos-duration="1300"
-          className="text-center max-w-4xl mx-auto text-base lg:text-lg contentColor contentFont leading-relaxed contentColor mb-4 "
+          className="text-center max-w-4xl mx-auto text-base lg:text-lg contentColor contentFont leading-relaxed contentColor   "
         >
           {item.content}
         </p>

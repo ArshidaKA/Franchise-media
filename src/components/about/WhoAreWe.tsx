@@ -7,7 +7,7 @@ const WhoAreWe: React.FC = () => {
   return (
     <div className="font-sans">
       {/* Who Are We Section */}
-      <section className="max-w-7xl mx-auto py-16 px-4 md:px-8">
+      <section className="max-w-7xl mx-auto pt-8 pb-13 md:pt-16 px-4 md:px-8">
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
@@ -44,7 +44,7 @@ const WhoAreWe: React.FC = () => {
 
       {/* Expert Teams Section */}
       <section className="max-w-6xl mx-auto  px-4 md:px-8">
-        <div className="flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center md:gap-8">
           <div className="md:w-1/2">
             <h2
               data-aos="fade-up"
@@ -83,7 +83,7 @@ const WhoAreWe: React.FC = () => {
       </section>
 
       {/* Vision and Mission Section */}
-      <section className="max-w-6xl mx-auto py-7 px-4 md:px-8 bg-white">
+      <section className="max-w-6xl mx-auto py-4 px-4 md:px-8 bg-white">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 p-6 text-center">
             <h2

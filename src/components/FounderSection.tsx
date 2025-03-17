@@ -3,7 +3,7 @@ import { TagButtonWithLine } from "./reuse/Buttons";
 
 const FounderSection: React.FC = () => {
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
+    <section className="md:py-16 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 lg:gap-0 items-center">
         <div data-aos="fade-up" data-aos-duration="1400">
           <img

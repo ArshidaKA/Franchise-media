@@ -127,7 +127,7 @@ const Hero = () => {
             className="md:col-span-2"
           >
             <div className="rounded-4xl">
-              <img
+              <img 
                 src={mainImage}
                 alt="Main media"
                 className="lg:w-[35rem] w-full h-[20rem] lg:h-[33rem] rounded-4xl "

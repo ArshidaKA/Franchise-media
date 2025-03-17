@@ -4,7 +4,7 @@ import { Button, TagButtonWithLine } from "./reuse/Buttons";
 
 const ExpertiseSection: React.FC = () => {
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20">
+    <section className="py-6 md:py-16 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
           <TagButtonWithLine label="our Expertise" />

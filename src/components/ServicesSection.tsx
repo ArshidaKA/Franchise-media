@@ -3,7 +3,7 @@ import { Button, TagButtonWithLine } from "./reuse/Buttons";
 
 const ServicesSection: React.FC = () => {
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
+    <section className=" md:pb-16 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* First Service */}
         <div className="grid md:grid-cols-2 gap-8 items-center mb-20">
