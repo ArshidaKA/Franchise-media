@@ -34,11 +34,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile menu button */}
         <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
-          {isOpen ? (
-            <FaTimes size={24}  />
-          ) : (
-            <FaBars size={24} />
-          )}
+          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
 
         {/* Desktop menu */}
@@ -60,7 +56,13 @@ const Navbar: React.FC = () => {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden fixed top-0 h-screen left-0 right-0 bg-white z-[99999] shadow-md">
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            className="md:hidden fixed top-0 h-screen left-0 right-0 bg-white z-[99999] shadow-md"
+          >
             <button
               className="absolute top-4 right-8 text-gray-900"
               onClick={toggleMenu}
@@ -70,7 +72,8 @@ const Navbar: React.FC = () => {
             <ul className="flex flex-col p-4 mt-10 space-y-3">
               {path.map((item, i) => (
                 <Link key={i} to={item.path}>
-                  <li onClick={toggleMenu}
+                  <li
+                    onClick={toggleMenu}
                     className={`  contentFont ${
                       item.path === window.location.pathname
                         ? "text-blue-700"
