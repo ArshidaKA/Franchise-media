@@ -23,7 +23,7 @@ const OurService = ({ item }: OurServiceProps) => {
       <section
         id={item.navigateTo}
         className={`max-w-7xl mx-auto ${
-          item.title === "Franchise Marketing Service" ? "pt-0" : "pt-16"
+          item.title === "Franchise Marketing Service" ? "pt-16" : "pt-10"
         } px-4 md:px-8`}
       >   
         <h2
