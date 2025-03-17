@@ -1,5 +1,5 @@
 import type React from "react";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
@@ -48,18 +48,24 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex lg:justify-between lg:items-center lg:flex-row flex-col ">
           <div className="flex space-x-4 mt-6">
-            <div className="hover:text-blue-300 flex items-center transition duration-300">
-              <FaFacebook size={20} />{" "}
-              <span className="ml-2 contentFont">Facebook</span>
-            </div>
-            <div className="hover:text-blue-300 flex items-center transition duration-300">
-              <FaTwitter size={20} />{" "}
-              <span className="ml-2 contentFont">Twitter</span>
-            </div>
-            <div className="hover:text-blue-300 transition flex items-center duration-300">
-              <FaInstagram size={20} />{" "}
-              <span className="ml-2 contentFont">Instagram</span>
-            </div>
+            <Link to="https://www.facebook.com/share/1FGU7oRUGg/">
+              <div className="hover:text-blue-300 flex items-center transition duration-300">
+                <FaFacebook size={20} />{" "}
+                <span className="ml-2 contentFont">Facebook</span>
+              </div>
+            </Link>
+            <Link to="https://www.linkedin.com/posts/franchisemedia_franchiseyourway-activity-7294603346571624448-09ao?utm_source=share&utm_medium=member_desktop&rcm=ACoAACr4ObsBNrTNYJOcQwIKbOOaDTZwEZkqHOo">
+              <div className="hover:text-blue-300 flex items-center transition duration-300">
+                <FaLinkedin size={20} />{" "}
+                <span className="ml-2 contentFont">Linkedin</span>
+              </div>
+            </Link>
+            <Link to="https://www.instagram.com/franchisemedia.in?igsh=MTA5YWk4d3Q0eXI4eg==">
+              <div className="hover:text-blue-300 transition flex items-center duration-300">
+                <FaInstagram size={20} />{" "}
+                <span className="ml-2 contentFont">Instagram</span>
+              </div>
+            </Link>
           </div>
           <div className="mt-6 flex  gap-2">
             <input

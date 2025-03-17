@@ -124,7 +124,7 @@ const Hero = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1300"
-            className="md:col-span-2"
+            className="md:col-span-2 mb-4 md:mb-0"
           >
             <div className="rounded-4xl">
               <img 

@@ -32,8 +32,6 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
     <div>
       {/* Contact Us Section */}
       <section className="max-w-7xl mx-auto py-16 px-6 md:px-12 lg:px-20  ">
-     
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           <div>
             {/* Feedback Form */}
@@ -119,8 +117,8 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
             {/* Location and Contact Info */}
             <div
               data-aos="fade-up"
-              data-aos-duration="1200"                  
-              className="  p-6 rounded-3xl max-w-md flex flex-col gap-6 "       
+              data-aos-duration="1200"
+              className="  p-6 rounded-3xl max-w-md flex flex-col gap-6 "
             >
               <div className="flex items-start mb-4 gap-2">
                 <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
@@ -142,7 +140,10 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
                     Contact
                   </h4>
                   <p className="text-sm contentFont contentColor ">
-                    +91 9999799999
+                    +919207887722
+                  </p>
+                  <p className="text-sm contentFont contentColor ">
+                    +919207887722                                           
                   </p>
                 </div>
               </div>
