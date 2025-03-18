@@ -2,16 +2,21 @@ import { useRef, useState, useEffect } from "react";
 
 const PartnerLogos: React.FC = () => {
   const partners = [
-    { name: "Walmart", logo: "/partner/walmart.png" },
-    { name: "FedEx", logo: "/partner/fedex.png" },
-    { name: "Amazon", logo: "/partner/amazon.png" },
-    { name: "Stripe", logo: "/partner/stripe.png" },
-    { name: "Airbnb", logo: "/partner/airbnb.png" },
-    { name: "Ripple", logo: "/partner/stripe.png" },
-    { name: "Tesla", logo: "/partner/stripe.png" },
-    { name: "Microsoft", logo: "/partner/stripe.png" },
-    { name: "Google", logo: "/partner/stripe.png" },
-    { name: "Netflix", logo: "/partner/stripe.png" },
+    { name: "Walmart", logo: "/partner/01.jpg" },
+    { name: "FedEx", logo: "/partner/02.png" },
+    { name: "Amazon", logo: "/partner/03.png" },
+    { name: "Stripe", logo: "/partner/04.png" },
+    { name: "Airbnb", logo: "/partner/05.png" },
+    { name: "Ripple", logo: "/partner/06.jpg" },
+    { name: "Tesla", logo: "/partner/07.jpg" },
+    { name: "Microsoft", logo: "/partner/08.jpg" },
+    { name: "Google", logo: "/partner/09.jpg" },
+    { name: "Netflix", logo: "/partner/011.jpg" },
+    { name: "Netflix", logo: "/partner/012.png" },
+    { name: "Netflix", logo: "/partner/013.jpg" },
+    { name: "Netflix", logo: "/partner/015.png" },
+    { name: "Netflix", logo: "/partner/016.png" },
+    { name: "Netflix", logo: "/partner/017.png" },
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -177,7 +182,7 @@ const PartnerLogos: React.FC = () => {
         }}
       >
         {partners.map((partner, index) => (
-          <div key={index} className="flex-shrink-0 w-28">
+          <div key={index} className="flex-shrink-0 w-28 flex items-center">
             <img
               src={partner.logo}
               className="w-full"

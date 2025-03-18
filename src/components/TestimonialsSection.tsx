@@ -5,29 +5,29 @@ import { TagButtonWithLine } from "./reuse/Buttons";
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      name: "Grace Turner",
-      title: "Director",
-      image: "/home/male.png",
+      name: "Nithin Chandran",
+      title: "Founder,Vollmond Agro Processing",
+      image: "/testmonia/user.png",
       quote:
-        "Financial expertise has made a significant impact on our nonprofit financial stability, allowing us to better serve our community",
+        " We came to franchise media for branding & Communication purpose.Without thinking twice we can say that , they rised to our level of expectation.What keep them out of crowd is ceativity and service.",
       bg: false,
       duration: 1000,
     },
     {
-      name: "Mohammed Shafi",
-      title: "Club Sulaimani",
-      image: "/home/male.png",
+      name: "Nandan",
+      title: "sales head - Sobha ltd., Kozhikode",
+      image: "/testmonia/user.png",
       quote:
-        "We have grown in ways we have never envisioned. Franchise media is a partner every aspirational business needs.",
+        "Collaborating with Mr. Safwan of Western Ad Factory has been a pleasure. As he expands to Franchise Media, clients can expect enhanced services. His team’s four-year association with Sobha Ltd., Kozhikode, reflects their customer-centric approach, creativity, and timely execution. Wishing him and Franchise Media success in Kerala’s advertising industry.",
       bg: true,
       duration: 1200,
     },
     {
-      name: "Alex Walker",
-      title: "Attorney",
-      image: "/home/male.png",
+      name: "Mohammed Shafi",
+      title: "Club Sulaimani",
+      image: "/testmonia/user.png",
       quote:
-        "Estate planning is crucial, and they made the process seamless and stress-free. I can rest assured knowing family's future is secure",
+        "We have grown in ways we have never dreamed of, Franchise media is a partner every aspirational business need.",
       bg: false,
       duration: 1400,
     },
