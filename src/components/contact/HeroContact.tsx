@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const HeroContact = () => {
@@ -120,18 +121,20 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
               data-aos-duration="1200"
               className="  p-6 rounded-3xl max-w-md flex flex-col gap-6 "
             >
-              <div className="flex items-start mb-4 gap-2">
-                <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
-                <div>
-                  <h4 className="text-sm contentFont font-semibold headingColor">
-                    Location
-                  </h4>
-                  <p className="text-sm contentFont contentColor">
-                    #6/118 Balram Park, 14th 4th Cross, Thondayad, Kozhikode,
-                    Kerala 673014
-                  </p>
+              <Link to="https://g.co/kgs/mDGgFtj">
+                <div className="flex items-start mb-4 gap-2">
+                  <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
+                  <div>
+                    <h4 className="text-sm contentFont font-semibold headingColor">
+                      Location
+                    </h4>
+                    <p className="text-sm contentFont contentColor">
+                      HiLITE Business Park, 1410, 4th Floor, Bypass, Thondayad,
+                      Kozhikode, Kerala 673014
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               <div className="flex items-start gap-4 mb-4">
                 <img src="/contact/call.png" className="w-8 h-8" alt="call" />
@@ -143,7 +146,7 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
                     +919207887722
                   </p>
                   <p className="text-sm contentFont contentColor ">
-                    +919207887722                                           
+                    +919207887722
                   </p>
                 </div>
               </div>

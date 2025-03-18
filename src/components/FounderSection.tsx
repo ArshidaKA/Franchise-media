@@ -45,7 +45,7 @@ const FounderSection: React.FC = () => {
             data-aos-duration="1200"
             className="headingColor contentFont"
           >
-            Founder - Franchise Media
+            Founder and CEO
           </p>
         </div>
       </div>

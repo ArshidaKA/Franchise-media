@@ -156,7 +156,7 @@ const PartnerLogos: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-10 px-6 md:px-12 lg:px-20 bg-white">
+    <section className="py-10 px-6 md:px-12 lg:px-20 bg-white max-w-7xl mx-auto">
       <div
         ref={scrollRef}
         className={`flex space-x-7 lg:space-x-20 overflow-x-auto hide-scrollbar ${

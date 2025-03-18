@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
      { name: "Service", path: "/service" },
      { name: "Blog", path: "/blog" },
    ];
-
+     
   return (
     <footer className="bg-gradient-to-b from-[#2b3a8f] to-[#0c1129]  text-white py-12 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
