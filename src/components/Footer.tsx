@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
    ];
      
   return (
-    <footer className="bg-gradient-to-b from-[#2b3a8f] to-[#0c1129] max-w-7xl mx-auto  text-white py-12 px-6 md:px-12 lg:px-20">
-      <div className="">
+    <footer className="bg-gradient-to-b from-[#2b3a8f] to-[#0c1129]  text-white py-12 px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto ">
         <div className="flex flex-col lg:flex-row items-start justify-between w-full gap-8 mb-8">
           {/* Company Info */}
           <div className="lg:w-64 w-full">
