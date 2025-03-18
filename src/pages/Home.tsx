@@ -1,5 +1,5 @@
 import ExpertiseSection from "../components/ExpertiseSection"
-import FounderSection from "../components/FounderSection"
+import FeatureSection from "../components/FeatureSection"
 import HeroSection from "../components/HeroSection"
 import PartnerLogos from "../components/PartnerLogos"
 import ServicesSection from "../components/ServicesSection"
@@ -14,7 +14,7 @@ const Home = () => {
         <ExpertiseSection />
         <ServicesSection />
         <TestimonialsSection />
-        <FounderSection />
+        <FeatureSection />
     </div>
   )
 }
