@@ -1,5 +1,6 @@
 import type React from "react";
 import { IoIosCloseCircle } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 interface ContactPopupProps {
   isOpen: boolean;
@@ -50,9 +51,11 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose }) => {
           <p className="text-gray-700 mb-6">
             franchise opportunities and share your inquiries with our team
           </p>
-          <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white py-2 px-6 rounded-md transition-colors w-full max-w-xs">
-            Send Email
-          </button>
+          <Link to="mailto:Info@franchisemedia.in">
+            <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white py-2 px-6 rounded-md transition-colors w-full max-w-xs">
+              Send Email
+            </button>
+          </Link>
         </div>
       </div>
     </div>

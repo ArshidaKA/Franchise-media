@@ -185,9 +185,11 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
                 Connect with us to explore tailored franchise opportunities and
                 get your queries addressed
               </p>
-              <button className="bg-green-500 contentFont cursor-pointer text-white py-2 px-8 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
-                WhatsApp
-              </button>
+              <Link to="https://wa.me/919207887722">
+                <button className="bg-green-500 contentFont cursor-pointer text-white py-2 px-8 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
+                  WhatsApp
+                </button>
+              </Link>
             </div>
 
             {/* Email Card */}
@@ -203,9 +205,11 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
                 Contact us via email to explore exclusive franchise
                 opportunities and share your inquiries with our team
               </p>
-              <button className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-8 rounded-lg  hover:bg-indigo-900 transition duration-300 w-fit">
-                Send Email
-              </button>
+              <Link to="mailto:Info@franchisemedia.in">
+                <button className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-8 rounded-lg  hover:bg-indigo-900 transition duration-300 w-fit">
+                  Send Email
+                </button>
+              </Link>
             </div>
           </div>
         </div>

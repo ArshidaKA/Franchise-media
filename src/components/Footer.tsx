@@ -42,7 +42,8 @@ const Footer: React.FC = () => {
                 Contact Details
               </h3>
               <p className="mb-2">contact@infofin.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p className=" ">+919207887722</p>
+              <p className=" ">+919207887722</p>
             </div>
           </div>
         </div>
