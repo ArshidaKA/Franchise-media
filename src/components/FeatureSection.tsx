@@ -17,7 +17,7 @@ const FeatureSection = () => {
           Watch interviews and media segments featuring Franchise Media
         </p>
       </div>
-      <div className="flex justify-center items-center pt-10">
+      <div className="flex justify-center items-center pt-10 px-2 md:px-0">
         <iframe
           className="w-full max-w-2xl aspect-video rounded-lg "
           src="https://www.youtube.com/embed/6h6Vy1MgYT4?si=9L0a9hU_Djw0ScZT"
