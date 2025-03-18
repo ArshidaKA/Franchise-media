@@ -10,7 +10,7 @@ const TestimonialsSection: React.FC = () => {
       image: "/testmonia/user.png",
       quote:
         " We came to franchise media for branding & Communication purpose.Without thinking twice we can say that , they rised to our level of expectation.What keep them out of crowd is ceativity and service.",
-      bg: false,
+      bg: true,
       duration: 1000,
     },
     {
@@ -28,7 +28,7 @@ const TestimonialsSection: React.FC = () => {
       image: "/testmonia/user.png",
       quote:
         "We have grown in ways we have never dreamed of, Franchise media is a partner every aspirational business need.",
-      bg: false,
+      bg: true,
       duration: 1400,
     },
   ];

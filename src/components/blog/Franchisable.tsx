@@ -2,9 +2,7 @@ export default function Franchisable() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 font-sans">
       {/* Blog Header */}
-      <div className="mb-4">
-        <h2 className="headingColor font-medium text-2xl">Blog</h2>
-      </div>
+      
 
       {/* Blog Title */}
       <h1 className="text-2xl md:text-4xl font-bold text-indigo-400 mb-6">

@@ -25,13 +25,7 @@ const Hero = () => {
     <div className="max-w-7xl px-6 md:px-12 lg:px-20 mx-auto py-16">
       {/* Blog Section */}
       <section className="mb-16">
-        <h2
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          className="text-2xl lg:text-3xl font-bold headingColor mb-2"
-        >
-          Blog
-        </h2>
+     
         <h3
           data-aos="fade-up"
           data-aos-duration="1200"
