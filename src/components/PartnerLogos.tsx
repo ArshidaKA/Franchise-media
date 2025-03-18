@@ -162,6 +162,13 @@ const PartnerLogos: React.FC = () => {
 
   return (
     <section className="py-10 px-6 md:px-12 lg:px-20 bg-white max-w-7xl mx-auto">
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1100"
+        className="text-2xl md:text-4xl font-bold headingColor mb-6 text-center"
+      >
+        Our Clients
+      </h2>
       <div
         ref={scrollRef}
         className={`flex space-x-7 lg:space-x-20 overflow-x-auto hide-scrollbar ${
