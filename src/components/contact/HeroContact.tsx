@@ -11,6 +11,7 @@ const HeroContact = () => {
       subject: "",
       message: "",
     });
+    const [isLoading,setIsLoading] = useState<boolean>(false)
 
    const handleChange = (
      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,6 +22,7 @@ const HeroContact = () => {
 
 const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
+  setIsLoading(true)
 
   emailjs
     .sendForm(
@@ -40,6 +42,7 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
           subject: "",
           message: "",
         });
+        setIsLoading(false);
       },
       (error: Error) => {
         console.log("FAILED...", error);
@@ -129,7 +132,7 @@ const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
                 data-aos-duration="1400"
                 className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-10 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit"
               >
-                Submit
+                {isLoading ? " Loading..." : "Submit"}
               </button>
             </form>
 
