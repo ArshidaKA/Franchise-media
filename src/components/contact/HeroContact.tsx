@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 
 const HeroContact = () => {
@@ -20,14 +21,31 @@ const HeroContact = () => {
 
 const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
-  alert("Your form is successfully submitted");
-   setFormData({
-     fullName: "",
-     email: "",
-     phone: "",
-     subject: "",
-     message: "",
-   });
+
+  emailjs
+    .sendForm(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      e.target as HTMLFormElement,
+      import.meta.env.VITE_PUBLIC_KEY
+    )
+    .then(
+      (response: any) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Your form is successfully submitted");
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      },
+      (error: Error) => {
+        console.log("FAILED...", error);
+        alert("Failed to send message. Please try again later.");
+      }
+    );
 };
   return (
     <div>
