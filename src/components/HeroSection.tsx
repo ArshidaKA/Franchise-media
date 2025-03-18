@@ -32,12 +32,12 @@ const HeroSection: React.FC = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1500"
-          className="order-1 md:order-2 w-full h-[35rem]"
+          className="order-1 md:order-2 w-full h-auto lg:h-[35rem]"
         >
           <img
             src="/hero/hero.png"
             alt="World Map Illustration"
-            className="w-full h-[35rem] "
+            className="w-full h-auto lg:h-[35rem] "
           />
         </div>
       </div>

@@ -34,8 +34,8 @@ const TestimonialsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-20 ">
-      <div className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto py-16 px-6 md:px-12 lg:px-20 ">
+      <div className="">
         <div className=" mb-12">
           <TagButtonWithLine label="TESTIMONIALS" />
           <h2
@@ -55,7 +55,7 @@ const TestimonialsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               data-aos="fade-up"
