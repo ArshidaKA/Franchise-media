@@ -27,10 +27,7 @@ const HeroSection: React.FC = () => {
             Empowering your journey to global financial success through
             customised and personalised financial Consulting for every client
           </p>
-          <Button
-            clickHandle={openPopup}
-            label="Request for a free consultation"
-          />
+          <Button clickHandle={openPopup} label="Request for a consultation" />
         </div>
         <div
           data-aos="fade-up"
