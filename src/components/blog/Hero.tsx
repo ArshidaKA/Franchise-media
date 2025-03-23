@@ -130,7 +130,7 @@ const Hero = () => {
           </div>
 
           {/* Small Images Column */}
-          <div className="grid grid-cols-2 scrollBar md:grid-cols-1 gap-2 h-[21rem] lg:h-[28rem] overflow-y-scroll">
+          <div className="grid grid-cols-2 scrollBar md:grid-cols-2 gap-2 h-[21rem] lg:h-[28rem] overflow-y-scroll">
             {smallImages.map((image, index) => (
               <div
                 key={index}

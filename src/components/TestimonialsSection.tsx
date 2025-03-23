@@ -24,7 +24,7 @@ const TestimonialsSection: React.FC = () => {
     },
     {
       name: "Mohammed Shafi",
-      title: "Club Sulaimani",
+      title: "MD - Club Sulaimani",
       image: "/testmonia/user.png",
       quote:
         "We have grown in ways we have never dreamed of, Franchise media is a partner every aspirational business need.",
