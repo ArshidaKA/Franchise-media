@@ -28,7 +28,6 @@ const HeroContact = () => {
   const submitHandle = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
-
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
