@@ -21,7 +21,7 @@ const PartnerLogos: React.FC = () => {
 
   const scrollRef = useRef<HTMLDivElement>(null);   
 
-  // Auto scroll effect
+  // Auto scroll effect     
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
