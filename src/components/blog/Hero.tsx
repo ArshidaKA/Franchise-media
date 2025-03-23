@@ -23,9 +23,53 @@ const Hero = () => {
 
   return (
     <div className="max-w-7xl px-6 md:px-12 lg:px-20 mx-auto py-16">
+      {/* Media Section */}
+      <section>
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          className="text-2xl md:text-4xl font-bold text-indigo-400 mb-8"
+        >
+          Media
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center ">
+          {/* Large Image */}
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1300"
+            className="md:col-span-2 mb-4 md:mb-0"
+          >
+            <div className="rounded-4xl">
+              <img
+                src={mainImage}
+                alt="Main media"
+                className="lg:w-[35rem] w-full h-[20rem] lg:h-[33rem] rounded-4xl "
+              />
+            </div>
+          </div>
+
+          {/* Small Images Column */}
+          <div className="grid grid-cols-2 scrollBar md:grid-cols-2 gap-2 h-[21rem] lg:h-[28rem] overflow-y-scroll">
+            {smallImages.map((image, index) => (
+              <div
+                key={index}
+                className="rounded-4xl overflow-hidden h-36 shadow-md cursor-pointer"
+                onClick={() => setMainImage(image)}
+              >
+                <img
+                  src={image}
+                  alt={`Thumbnail ${index + 1}`}
+                  className="w-full h-40 object-cover rounded-4xl"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Blog Section */}
-      <section className="mb-16">
-     
+      <section className="my-16">
         <h3
           data-aos="fade-up"
           data-aos-duration="1200"
@@ -100,51 +144,6 @@ const Hero = () => {
               </p>
             </div>
           </Link>
-        </div>
-      </section>
-
-      {/* Media Section */}
-      <section>
-        <h2
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          className="text-2xl md:text-4xl font-bold text-indigo-400 mb-8"
-        >
-          Media
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center ">
-          {/* Large Image */}
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1300"
-            className="md:col-span-2 mb-4 md:mb-0"
-          >
-            <div className="rounded-4xl">
-              <img 
-                src={mainImage}
-                alt="Main media"
-                className="lg:w-[35rem] w-full h-[20rem] lg:h-[33rem] rounded-4xl "
-              />
-            </div>
-          </div>
-
-          {/* Small Images Column */}
-          <div className="grid grid-cols-2 scrollBar md:grid-cols-2 gap-2 h-[21rem] lg:h-[28rem] overflow-y-scroll">
-            {smallImages.map((image, index) => (
-              <div
-                key={index}
-                className="rounded-4xl overflow-hidden h-36 shadow-md cursor-pointer"
-                onClick={() => setMainImage(image)}
-              >
-                <img
-                  src={image}
-                  alt={`Thumbnail ${index + 1}`}
-                  className="w-full h-40 object-cover rounded-4xl"
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
     </div>

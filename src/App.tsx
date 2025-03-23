@@ -13,6 +13,7 @@ import SafeOption from "./components/blog/SafeOption";
 import Franchisable from "./components/blog/Franchisable";
 import StickyWhatsapp from "./components/StickyWhatsapp";
 import "./App.css";
+import StikyCall from "./components/StickyCall";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/franchisable" element={<Franchisable />} />
       </Routes>
       <StickyWhatsapp />
+      <StikyCall />
       <Footer />
     </>
   );

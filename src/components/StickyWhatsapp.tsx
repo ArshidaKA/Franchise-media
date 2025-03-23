@@ -33,7 +33,7 @@ const StickyWhatsapp = () => {
     <div>
       {" "}
       {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 right-6 z-[99]" ref={whatsappRef}>
+      <div className="fixed bottom-24 right-6 z-[99]" ref={whatsappRef}>
         {/* WhatsApp Icon */}
         <div
           onClick={() => setShowWhatsAppOptions(!showWhatsAppOptions)}

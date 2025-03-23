@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { IoCall } from "react-icons/io5";
 
 const StikyCall = () => {
   const [showWhatsAppOptions, setShowWhatsAppOptions] = useState(false);
@@ -33,13 +33,13 @@ const StikyCall = () => {
     <div>
       {" "}
       {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 right-6 z-[99]" ref={whatsappRef}>
+      <div className="fixed bottom-4 right-6 z-[99]" ref={whatsappRef}>
         {/* WhatsApp Icon */}
         <div
           onClick={() => setShowWhatsAppOptions(!showWhatsAppOptions)}
           className="cursor-pointer text-green-500 w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
         >
-          <IoLogoWhatsapp className="w-12 h-12" />
+          <IoCall className="w-12 h-12" />
         </div>
 
         {/* WhatsApp Country Options */}
@@ -47,7 +47,7 @@ const StikyCall = () => {
           <div className="absolute w-28 bottom-16 right-0 bg-white shadow-md rounded-lg p-3 z-[999]">
             {/* India */}
             <div
-              onClick={() => handleWhatsAppClick("https://wa.me/919207887722")}
+              onClick={() => handleWhatsAppClick("tel:+919207887722")}
               className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md cursor-pointer transition-all"
             >
               <img src="/flag/india.png" className="w-5 h-5" alt="India" />
@@ -56,7 +56,7 @@ const StikyCall = () => {
 
             {/* UAE */}
             <div
-              onClick={() => handleWhatsAppClick("https://wa.me/971585587792")}
+              onClick={() => handleWhatsAppClick("tel:+971585587792")}
               className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md cursor-pointer transition-all"
             >
               <img src="/flag/uae.png" className="w-5 h-5" alt="UAE" />
