@@ -19,7 +19,7 @@ const PartnerLogos: React.FC = () => {
     { name: "Netflix", logo: "/partner/017.png" },
   ];
 
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);   
 
   // Auto scroll effect
   useEffect(() => {

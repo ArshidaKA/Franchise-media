@@ -21,8 +21,8 @@ text-base lg:text-lg */
 }
 .headingColor{
     color: #2B3A8F;
-}
-.contentColor{
+}               
+.contentColor{   
     color: #575757;
 }
 
@@ -48,7 +48,7 @@ text-base lg:text-lg */
 /* Handle on hover */
 .scrollBar::-webkit-scrollbar-thumb:hover {
   background: #555; /* Even darker gray */
-}
+} 
 
 
 .hide-scrollbar::-webkit-scrollbar {

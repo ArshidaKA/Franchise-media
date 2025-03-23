@@ -39,7 +39,7 @@ const StikyCall = () => {
           onClick={() => setShowWhatsAppOptions(!showWhatsAppOptions)}
           className="cursor-pointer text-green-500 w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
         >
-          <IoCall className="w-12 h-12" />
+          <IoCall className="w-12 h-12 text-[#2B3A8F] " />
         </div>
 
         {/* WhatsApp Country Options */}

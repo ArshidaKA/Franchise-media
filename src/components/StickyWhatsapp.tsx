@@ -39,7 +39,7 @@ const StickyWhatsapp = () => {
           onClick={() => setShowWhatsAppOptions(!showWhatsAppOptions)}
           className="cursor-pointer text-green-500 w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
         >
-          <IoLogoWhatsapp className="w-12 h-12" />
+          <IoLogoWhatsapp className="w-12 h-12   " />
         </div>
 
         {/* WhatsApp Country Options */}
