@@ -23,8 +23,8 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose }) => {
     }
 
     return country === "IND"
-      ? "https://wa.me/919207887722"
-      : "https://wa.me/971585587792";
+      ? "https://wa.me/9207951000"
+      : "https://wa.me/971552968786";
   };
   const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (country === "") {
