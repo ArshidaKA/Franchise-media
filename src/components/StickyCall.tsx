@@ -30,7 +30,7 @@ const StikyCall = () => {
     };
   }, [showWhatsAppOptions]);
   return (
-    <div>                                                
+    <div>
       {" "}
       {/* WhatsApp Floating Button */}
       <div className="fixed bottom-4 right-6 z-[99]" ref={whatsappRef}>
@@ -47,7 +47,7 @@ const StikyCall = () => {
           <div className="absolute w-28 bottom-16 right-0 bg-white shadow-md rounded-lg p-3 z-[999]">
             {/* India */}
             <div
-              onClick={() => handleWhatsAppClick("tel:+919207887722")}
+              onClick={() => handleWhatsAppClick("tel:+9207951000")}
               className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md cursor-pointer transition-all"
             >
               <img src="/flag/india.png" className="w-5 h-5" alt="India" />
@@ -56,7 +56,7 @@ const StikyCall = () => {
 
             {/* UAE */}
             <div
-              onClick={() => handleWhatsAppClick("tel:+971585587792")}
+              onClick={() => handleWhatsAppClick("tel:+97155296 8786")}
               className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md cursor-pointer transition-all"
             >
               <img src="/flag/uae.png" className="w-5 h-5" alt="UAE" />

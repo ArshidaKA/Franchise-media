@@ -64,8 +64,8 @@ const HeroContact = () => {
     }
 
     return country === "IND"
-      ? "https://wa.me/919207887722"
-      : "https://wa.me/971585587792";
+      ? "https://wa.me/9207951000"
+      : "https://wa.me/971552968786";
   };
 
   // Handle WhatsApp button click
@@ -197,10 +197,10 @@ const HeroContact = () => {
                     Contact
                   </h4>
                   <p className="text-sm contentFont contentColor">
-                    +919207887722
+                    +9207951000
                   </p>
                   <p className="text-sm contentFont contentColor">
-                    +971 58 558 7792
+                    +971 55 296 8786
                   </p>
                 </div>
               </div>
