@@ -47,7 +47,7 @@ const StickyWhatsapp = () => {
           <div className="absolute w-28 bottom-16 right-0 bg-white shadow-md rounded-lg p-3 z-[999]">
             {/* India */}
             <div
-              onClick={() => handleWhatsAppClick("https://wa.me/919207887722")}
+              onClick={() => handleWhatsAppClick("https://wa.me/9207951000")}
               className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md cursor-pointer transition-all"
             >
               <img src="/flag/india.png" className="w-5 h-5" alt="India" />
@@ -56,7 +56,7 @@ const StickyWhatsapp = () => {
 
             {/* UAE */}
             <div
-              onClick={() => handleWhatsAppClick("https://wa.me/971585587792")}
+              onClick={() => handleWhatsAppClick("https://wa.me/971552968786")}
               className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-md cursor-pointer transition-all"
             >
               <img src="/flag/uae.png" className="w-5 h-5" alt="UAE" />
