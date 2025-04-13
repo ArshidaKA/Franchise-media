@@ -64,7 +64,7 @@ const HeroContact = () => {
     }
 
     return country === "IND"
-      ? "https://wa.me/9207951000"
+      ? "https://wa.me/919207951000"
       : "https://wa.me/971552968786";
   };
 
