@@ -197,10 +197,10 @@ const HeroContact = () => {
                     Contact
                   </h4>
                   <p className="text-sm contentFont contentColor">
-                    +9207951000
+                    +91 9207887722
                   </p>
                   <p className="text-sm contentFont contentColor">
-                    +971 55 296 8786
+                    +971 585587792
                   </p>
                 </div>
               </div>
