@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
               </h3>
               <p className="mb-2">Info@franchisemedia.in</p>
               <p className=" ">+919207887722</p>
-              <p className=" ">+919207887722</p>
+              <p className=" ">+971585587792</p>
             </div>
           </div>
         </div>
