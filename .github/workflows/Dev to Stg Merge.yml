@@ -1,0 +1,27 @@
+# .github/workflows/dev-to-stg.yml
+
+name: Restrict Dev to Stg Merge
+
+on:
+  pull_request:
+    branches:
+      - stg
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  restrict-merge:
+    if: github.base_ref == 'stg' && github.head_ref == 'dev'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check actor permission
+        run: |
+          echo "Triggered by: ${{ github.actor }}"
+          if [ "${{ github.actor }}" != "fletten" ]; then
+            echo "❌ Unauthorized user: ${{ github.actor }} is not allowed to merge from dev to stg."
+            exit 1
+          else
+            echo "✅ Authorized user: Merge allowed."
+          fi
