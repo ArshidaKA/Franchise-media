@@ -289,7 +289,7 @@ const HeroContact = () => {
                 <img
                   src="/contact/whatsapp.png"
                   className="w-32 h-32"
-                  alt="whatsapp"
+                  alt="whatsapp Call now for Calicut franchise advisors"
                 />
               </div>
               <p className="text-center contentColor contentFont text-base lg:text-lg mb-4">
