@@ -8,7 +8,7 @@ const FounderSection: React.FC = () => {
         <div data-aos="fade-up" data-aos-duration="1400">
           <img
             src="/home/founder.png"
-            alt="Mr. Safwan CK"
+            alt="Mr. Safwan CK - Founder & CEO of Franchise Media | Top Franchise Consultant in Kerala & UAE"
             className=" h-[30rem] rounded-lg mx-auto object-cover"
           />
         </div>

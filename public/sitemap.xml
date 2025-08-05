@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/about" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/services" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Media Page -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/media</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/media" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/media" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/contact" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.64</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Calicut -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/calicut</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/calicut" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/calicut" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Kochi -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/kochi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/kochi" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/kochi" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Malappuram -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/malappuram</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/malappuram" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/malappuram" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- UAE -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/uae</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/uae" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/uae" />
+    <lastmod>2025-07-31</lastmod>
+    <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
