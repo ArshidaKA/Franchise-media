@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex lg:justify-between lg:items-center lg:flex-row flex-col ">
           <div className="flex space-x-4 mt-6">
-            <Link to="https://www.facebook.com/share/1FGU7oRUGg/">
+            <Link to="https://www.linkedin.com/company/franchisemedia/">
               <div className="hover:text-blue-300 flex items-center transition duration-300">
                 <FaFacebook size={20} />{" "}
                 <span className="ml-2 contentFont">Facebook</span>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
                 <span className="ml-2 contentFont">Linkedin</span>
               </div>
             </Link>
-            <Link to="https://www.instagram.com/franchisemedia.in?igsh=MTA5YWk4d3Q0eXI4eg==">
+            <Link to="https://www.instagram.com/franchise.media_/?igsh=MTA5YWk4d3Q0eXI4eg%3D%3D#">
               <div className="hover:text-blue-300 transition flex items-center duration-300">
                 <FaInstagram size={20} />{" "}
                 <span className="ml-2 contentFont">Instagram</span>
