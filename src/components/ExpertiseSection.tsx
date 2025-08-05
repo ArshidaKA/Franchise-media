@@ -40,7 +40,7 @@ const ExpertiseSection: React.FC = () => {
         >
           <img
             src="/home/business01.png"
-            alt="Business People Illustration"
+            alt="Successful franchise outlet developed by Franchise Media in Kerala"
             className="w-full max-w-md h-auto"
           />
         </div>
