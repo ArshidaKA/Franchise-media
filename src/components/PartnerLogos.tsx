@@ -17,6 +17,37 @@ const PartnerLogos: React.FC = () => {
     { name: "Netflix", logo: "/partner/015.png" },
     { name: "Netflix", logo: "/partner/016.png" },
     { name: "Netflix", logo: "/partner/017.png" },
+    { name: "Netflix", logo: "/partner/018.png" },
+    { name: "Netflix", logo: "/partner/019.png" },
+    { name: "Netflix", logo: "/partner/020.png" },
+    { name: "Netflix", logo: "/partner/021.jpg" },
+    { name: "Netflix", logo: "/partner/022.png" },
+    { name: "Netflix", logo: "/partner/023.png" },
+    { name: "Netflix", logo: "/partner/024.png" },
+    { name: "Netflix", logo: "/partner/025.png" },
+    { name: "Netflix", logo: "/partner/026.png" },
+    { name: "Netflix", logo: "/partner/027.png" },
+    { name: "Netflix", logo: "/partner/029.png" },
+    { name: "Netflix", logo: "/partner/030.png" },
+    { name: "Netflix", logo: "/partner/031.png" },
+    { name: "Netflix", logo: "/partner/032.png" },
+    { name: "Netflix", logo: "/partner/033.png" },
+    { name: "Netflix", logo: "/partner/034.png" },
+    { name: "Netflix", logo: "/partner/035.png" },
+    { name: "Netflix", logo: "/partner/036.png" },
+    { name: "Netflix", logo: "/partner/037.png" },
+    { name: "Netflix", logo: "/partner/038.png" },
+    { name: "Netflix", logo: "/partner/039.png" },
+    { name: "Netflix", logo: "/partner/040.jpeg" },
+
+    
+  
+
+
+
+
+    
+
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);   
