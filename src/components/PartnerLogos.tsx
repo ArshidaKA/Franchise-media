@@ -36,7 +36,7 @@ const PartnerLogos: React.FC = () => {
     { name: "Netflix", logo: "/partner/035.png" },
     { name: "Netflix", logo: "/partner/036.png" },
     { name: "Netflix", logo: "/partner/037.png" },
-    { name: "Netflix", logo: "/partner/038.png" },
+    { name: "Netflix", logo: "/partner/038.jpeg" },
     { name: "Netflix", logo: "/partner/039.png" },
     { name: "Netflix", logo: "/partner/040.jpeg" },
 
