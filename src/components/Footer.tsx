@@ -1,5 +1,5 @@
 import type React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
@@ -61,10 +61,17 @@ const Footer: React.FC = () => {
                 <span className="ml-2 contentFont">Linkedin</span>
               </div>
             </Link>
+            
             <Link to="https://www.instagram.com/franchise.media_/?igsh=MTA5YWk4d3Q0eXI4eg%3D%3D#">
               <div className="hover:text-blue-300 transition flex items-center duration-300">
                 <FaInstagram size={20} />{" "}
                 <span className="ml-2 contentFont">Instagram</span>
+              </div>
+            </Link>
+             <Link to="https://www.youtube.com/@franchise_media">
+              <div className="hover:text-blue-300 flex items-center transition duration-300">
+                <FaYoutube size={20} />{" "}
+                <span className="ml-2 contentFont">Youtube</span>
               </div>
             </Link>
           </div>
