@@ -48,7 +48,7 @@ const PartnerLogos: React.FC = () => {
 
 
 
-    
+
 
   ];
 
