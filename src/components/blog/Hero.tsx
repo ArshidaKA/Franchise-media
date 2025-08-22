@@ -7,19 +7,56 @@ const Hero = () => {
 
   // List of small images
   const smallImages = [
-    "/gallery/14.png",
-    "/gallery/3.png",
-    "/gallery/4.png",
-    "/gallery/5.png",
-    "/gallery/6.png",
-    "/gallery/7.png",
-    "/gallery/8.png",
-    "/gallery/9.png",
-    "/gallery/10.png",
-    "/gallery/11.png",
-    "/gallery/12.png",
-    "/gallery/13.png",
-  ];
+  {
+    image: "/gallery/14.png",
+    name: "Franchise Media gallery image showing business networking at franchise expo",
+  },
+  {
+    image: "/gallery/3.png",
+    name: "Franchise Media event photo highlighting franchise opportunities and partnerships",
+  },
+  {
+    image: "/gallery/4.png",
+    name: "Business owner consulting with Franchise Media representative at franchise exhibition",
+  },
+  {
+    image: "/gallery/5.png",
+    name: "Franchise Media engaging entrepreneurs about business expansion and franchising",
+  },
+  {
+    image: "/gallery/6.png",
+    name: "Entrepreneurs discussing franchise business models with Franchise Media",
+  },
+  {
+    image: "/gallery/7.png",
+    name: "Franchise Media networking with potential franchise partners at expo",
+  },
+  {
+    image: "/gallery/8.png",
+    name: "Business collaboration showcased in Franchise Media gallery event photo",
+  },
+  {
+    image: "/gallery/9.png",
+    name: "Franchise Media consultation booth with entrepreneurs at franchise show",
+  },
+  {
+    image: "/gallery/10.png",
+    name: "Investors interacting with Franchise Media about franchise growth opportunities",
+  },
+  {
+    image: "/gallery/11.png",
+    name: "Franchise Media team explaining brand promotion strategies at expo",
+  },
+  {
+    image: "/gallery/12.png",
+    name: "Entrepreneurship discussion at Franchise Media booth during franchise exhibition",
+  },
+  {
+    image: "/gallery/13.png",
+    name: "Franchise Media representative connecting with business owners for franchise success",
+  },
+];
+
 
   return (
     <div className="max-w-7xl px-6 md:px-12 lg:px-20 mx-auto py-16">
@@ -43,7 +80,7 @@ const Hero = () => {
             <div className="rounded-4xl">
               <img
                 src={mainImage}
-                alt="Main media"
+                alt="Franchise Media event "
                 className="lg:w-[35rem] w-full h-[20rem] lg:h-[33rem] rounded-4xl "
               />
             </div>
@@ -55,11 +92,11 @@ const Hero = () => {
               <div
                 key={index}
                 className="rounded-4xl overflow-hidden h-36 shadow-md cursor-pointer"
-                onClick={() => setMainImage(image)}
+                onClick={() => setMainImage(image.image)}
               >
                 <img
-                  src={image}
-                  alt={`Thumbnail ${index + 1}`}
+                  src={image.image}
+                  alt={image.name}
                   className="w-full h-40 object-cover rounded-4xl"
                 />
               </div>
