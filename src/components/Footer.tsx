@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             <p className="mb-4 contentFont text-base">
               Our expert financial consultants provide solutions to help you
               achieve financial wealth. Trust us to guide you toward a brighter
-              financial future.
+              financial futures.
             </p>
           </div>
 
