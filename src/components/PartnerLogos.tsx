@@ -38,8 +38,10 @@ const PartnerLogos: React.FC = () => {
     { name: "wayn", logo: "/partner/036.png" },
     { name: "team care & cure", logo: "/partner/037.png" },
     { name: "avilpro", logo: "/partner/038.jpeg" },
-    { name: "Grama Bakes & Sweets – bakery franchise client", logo: "/partner/039.png" },
+    { name: "Grama Bakes & Sweets – bakery franchise client", logo: "/partner/039.jpg" },
     { name: "kpg roofings", logo: "/partner/040.jpeg" },
+        { name: "royal", logo: "/partner/041.jpg" },
+
     
 
     
