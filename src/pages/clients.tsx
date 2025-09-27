@@ -1,5 +1,4 @@
 // src/pages/Clients.jsx
-import React from "react";
 
 const partners = [
   { name: "Chicken story-food franchise client", logo: "/partner/01.jpg" },
