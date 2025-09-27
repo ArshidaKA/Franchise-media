@@ -44,9 +44,11 @@ const partners = [
 
 function Clients() {
   return (
-    <section className="px-6 py-12">
+    <section className="px-6 py-12"
+     data-aos="fade-up"
+            data-aos-duration="1100">
       <h2 className="text-3xl font-bold text-center mb-10">Our Clients & Partners</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 place-items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center">
         {partners.map((partner, index) => (
           <div
             key={index}
