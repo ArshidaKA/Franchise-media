@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
 
    const path = [
-     { name: "About", path: "/about" },
+     { name: "About us", path: "/about" },
      { name: "Service", path: "/service" },
      { name: "Blog", path: "/blog" },
    ];
