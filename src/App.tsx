@@ -15,6 +15,10 @@ import StickyWhatsapp from "./components/StickyWhatsapp";
 import "./App.css";
 import StikyCall from "./components/StickyCall";
 import Clients from "./pages/clients";
+import BlogPost from "./components/blog/BlogPost";
+
+import BlogList from "./components/blog/BlogList";
+
 
 const App = () => {
   const { pathname } = useLocation();
@@ -43,6 +47,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/safeOption" element={<SafeOption />} />
         <Route path="/franchisable" element={<Franchisable />} />
+        <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost/>} />
       </Routes>
       <StickyWhatsapp />
       <StikyCall />

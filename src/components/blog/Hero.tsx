@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Hero = () => {
@@ -105,84 +104,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section className="my-16">
-        <h3
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          className="text-2xl md:text-4xl font-bold text-indigo-400 mb-8"
-        >
-          News, insights and more
-        </h3>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Blog Post 1 */}
-          <Link to="/safeOption">
-            <div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1300"
-                className="rounded-4xl overflow-hidden mb-4"
-              >
-                <img
-                  src="/blog/top01.png"
-                  alt="People in a restaurant"
-                  className="w-full h-64 object-cover"
-                />
-              </div>
-              <h4
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                className="text-2xl font-bold headingColor mb-2"
-              >
-                Why Franchising Is the Safer Option
-              </h4>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1400"
-                className="contentColor contentFont text-base lg:text-lg"
-              >
-                Startup culture is taking over the modern world and is quickly
-                becoming a popular choice for youngsters. A great place to start
-                your...
-              </p>
-            </div>
-          </Link>
-
-          {/* Blog Post 2 */}
-          <Link to="/franchisable">
-            <div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1300"
-                className="rounded-4xl overflow-hidden mb-4"
-              >
-                <img
-                  src="/blog/top02.png"
-                  alt="McDonald's restaurant"
-                  className="w-full h-64 object-cover"
-                />
-              </div>
-              <h4
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                className="text-2xl font-bold headingColor mb-2"
-              >
-                Is My Business Franchisable?
-              </h4>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="1400"
-                className="contentColor contentFont text-base lg:text-lg"
-              >
-                The franchise industry, although a relatively new concept in
-                India, is making a significant mark in the market. For many
-                business owners,...
-              </p>
-            </div>
-          </Link>
-        </div>
-      </section>
+  
     </div>
   );
 };
