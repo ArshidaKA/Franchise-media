@@ -1,84 +1,83 @@
-// src/components/blog/BlogPost.tsx
 import React from "react";
 import { useParams } from "react-router-dom";
-import { PortableTextBlock } from "@portabletext/types";
-// import { PortableText } from "@portabletext/react";
-import { usePost } from "../../hooks/useSanity";
-import { urlFor } from "../../lib/sanity";
+import blogPosts, { BlogPost } from "../../data/blog";
 
-interface Post {
-  _id: string;
-  title: string;
-  slug: { current: string };
-  excerpt?: string;
-  mainImage?: { asset: any; alt?: string };
-  publishedAt: string;
-  franchiseCategory: string;
-  body: PortableTextBlock[];
-}
+// Helper function
+const formatContent = (content?: string) => {
+  if (!content) return null;
+  return content.split("\n").map((line, idx) => {
+    const trimmedLine = line.trim();
+    if (!trimmedLine) return <br key={idx} />;
+    if (trimmedLine.endsWith(":")) {
+      return (
+        <h4 key={idx} className="mt-6 mb-2 text-lg font-semibold">
+          {trimmedLine}
+        </h4>
+      );
+    }
+    if (trimmedLine.startsWith("•")) {
+      return (
+        <li key={idx} className="ml-6 list-disc">
+          {trimmedLine.slice(1).trim()}
+        </li>
+      );
+    }
+    return <p key={idx}>{trimmedLine}</p>;
+  });
+};
 
+// Split into sentences
+const splitIntoSentences = (text: string) => {
+  return text.match(/[^.!?]+[.!?]+/g) || [text];
+};
 
+const BlogPostPage: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const post: BlogPost | undefined = blogPosts.find((p) => p.slug === slug);
 
-const BlogPost: React.FC = () => {
-const { slug } = useParams<{ slug: string }>();
-  const { post, loading, error } = usePost(slug);
+  if (!post) {
+    return <p className="text-center py-10 text-red-500">Post not found.</p>;
+  }
 
-  if (loading) return <div className="text-center py-10 text-gray-500">Loading post...</div>;
-  if (error) return <div className="text-center py-10 text-red-500">Error: {error}</div>;
-  if (!post) return <div className="text-center py-10 text-gray-400">Post not found</div>;
+  const content = post.content ?? post.excerpt ?? "";
+  const sentences = splitIntoSentences(content);
 
-  const typedPost = post as Post;
-
-  // Convert blocks into plain text (to split into sentences)
-  const allText = typedPost.body
-    ?.map(block => (block.children ? block.children.map(child => child.text).join(" ") : ""))
-    .join(" ") || "";
-
-  const sentences = allText.split(/(?<=[.!?])\s+/); // split by sentence endings
-  const introText = sentences.slice(0, 6).join(" "); // first 6 sentences
-  const remainingText = sentences.slice(6).join(" "); // rest
+  const firstPart = sentences.slice(0, 6).join(" ");
+  const remainingPart = sentences.slice(6).join(" ");
 
   return (
     <article className="max-w-3xl mx-auto px-4 py-10">
       {/* Title */}
       <header className="mb-8 text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">{typedPost.title}</h1>
-        <div className="flex justify-center gap-4 text-sm text-gray-500">
-          <span className="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full font-medium">
-            {typedPost.franchiseCategory}
-          </span>
-          <span>
-            {new Date(typedPost.publishedAt).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
-          </span>
-        </div>
+        <h1 className="text-4xl font-bold text-gray-900 mb-2">{post.title}</h1>
+        {post.publishedAt && (
+          <p className="text-gray-500 text-sm">
+            
+                        {new Date(post.publishedAt).toLocaleDateString()}
+          </p>
+        )}
       </header>
 
-      {/* Intro (first 6 sentences) */}
-      {introText && <p className="text-lg text-gray-700 leading-relaxed mb-6">{introText}</p>}
+      {/* First 6 sentences */}
+      <div className="text-base leading-relaxed font-sans">
+        {formatContent(firstPart)}
+      </div>
 
-      {/* Hero Image */}
-      {typedPost.mainImage && (
-        <div className="my-8">
-          <img
-            src={urlFor(typedPost.mainImage).width(900).height(500).url()}
-            alt={typedPost.mainImage.alt || typedPost.title}
-            className="w-full rounded-2xl shadow-md object-cover"
-          />
-        </div>
+      {/* Image after 6 sentences */}
+      {post.imageUrl && (
+        <img
+          src={post.imageUrl}
+          alt={post.title}
+          className="w-full h-[300px] object-cover rounded-lg my-6"
+        />
       )}
 
-      {/* Remaining text */}
-      {remainingText && (
-        <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
-          <p>{remainingText}</p>
-        </div>
-      )}
+      {/* Remaining content */}
+      <div className="text-base leading-relaxed font-sans">
+        {formatContent(remainingPart)}
+      </div>
     </article>
   );
 };
 
-export default BlogPost;
+export default BlogPostPage;
