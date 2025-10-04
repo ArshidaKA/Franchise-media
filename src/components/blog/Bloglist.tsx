@@ -29,7 +29,7 @@ const BlogList: React.FC = () => {
               <img
                 src={post.imageUrl}
                 alt={post.title}
-                className="w-[600px] group-hover:scale-105 transition-transform duration-300"
+                className=" group-hover:scale-105 transition-transform duration-300"
               />
             </div>
 
