@@ -40,6 +40,8 @@ const partners = [
   { name: "Grama Bakes & Sweets – bakery franchise client", logo: "/partner/039.jpg" },
   { name: "kpg roofings", logo: "/partner/040.jpeg" },
   { name: "royal", logo: "/partner/041.jpg" },
+          { name: "royal", logo: "/partner/042.png" },
+
 ];
 
 function Clients() {
