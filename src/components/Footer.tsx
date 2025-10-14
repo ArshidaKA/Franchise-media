@@ -47,45 +47,63 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex lg:justify-between lg:items-center lg:flex-row flex-col ">
-          <div className="flex space-x-4 mt-6">
-            <Link to="https://www.linkedin.com/company/franchisemedia/">
-              <div className="hover:text-blue-300 flex items-center transition duration-300">
-                <FaFacebook size={20} />{" "}
-                <span className="ml-2 contentFont">Facebook</span>
-              </div>
-            </Link>
-            <Link to="https://www.linkedin.com/posts/franchisemedia_franchiseyourway-activity-7294603346571624448-09ao?utm_source=share&utm_medium=member_desktop&rcm=ACoAACr4ObsBNrTNYJOcQwIKbOOaDTZwEZkqHOo">
-              <div className="hover:text-blue-300 flex items-center transition duration-300">
-                <FaLinkedin size={20} />{" "}
-                <span className="ml-2 contentFont">Linkedin</span>
-              </div>
-            </Link>
-            
-            <Link to="https://www.instagram.com/franchise.media_/?igsh=MTA5YWk4d3Q0eXI4eg%3D%3D#">
-              <div className="hover:text-blue-300 transition flex items-center duration-300">
-                <FaInstagram size={20} />{" "}
-                <span className="ml-2 contentFont">Instagram</span>
-              </div>
-            </Link>
-             <Link to="https://www.youtube.com/@franchise_media">
-              <div className="hover:text-blue-300 flex items-center transition duration-300">
-                <FaYoutube size={20} />{" "}
-                <span className="ml-2 contentFont">Youtube</span>
-              </div>
-            </Link>
-          </div>
-          <div className="mt-6 flex  gap-2">
-            <input
-              type="email"
-              placeholder="Email address"
-              className="py-4 px-4  contentFont text-sm bg-white rounded-md text-gray-800 w-full focus:outline-none"
-            />
-            <button className="bg-green-500 cursor-pointer w-40 contentFont text-sm hover:bg-green-600 text-white font-medium py-4 px-4 rounded-md transition duration-300">
-              Get Started
-            </button>
-          </div>
-        </div>
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full gap-6">
+  {/* Social Links */}
+  <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+    <a
+      href="https://www.facebook.com/franchisemedia/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-400 flex items-center transition duration-300"
+    >
+      <FaFacebook size={20} />
+      <span className="ml-2 contentFont text-sm sm:text-base">Facebook</span>
+    </a>
+
+    <a
+      href="https://www.linkedin.com/company/franchisemedia/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-400 flex items-center transition duration-300"
+    >
+      <FaLinkedin size={20} />
+      <span className="ml-2 contentFont text-sm sm:text-base">LinkedIn</span>
+    </a>
+
+    <a
+      href="https://www.instagram.com/franchise.media_/?igsh=MTA5YWk4d3Q0eXI4eg%3D%3D#"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-pink-400 flex items-center transition duration-300"
+    >
+      <FaInstagram size={20} />
+      <span className="ml-2 contentFont text-sm sm:text-base">Instagram</span>
+    </a>
+
+    <a
+      href="https://www.youtube.com/@franchise_media"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-red-500 flex items-center transition duration-300"
+    >
+      <FaYoutube size={20} />
+      <span className="ml-2 contentFont text-sm sm:text-base">YouTube</span>
+    </a>
+  </div>
+
+  {/* Email Subscription */}
+  <div className="flex flex-col sm:flex-row justify-center lg:justify-end w-full sm:w-auto gap-3">
+    <input
+      type="email"
+      placeholder="Email address"
+      className="py-3 px-4 contentFont text-sm bg-white rounded-md text-gray-800 w-full sm:w-72 focus:outline-none shadow-sm"
+    />
+    <button className="bg-green-500 cursor-pointer contentFont text-sm hover:bg-green-600 text-white font-medium py-3 px-4 rounded-md transition duration-300 w-full sm:w-auto">
+      Get Started
+    </button>
+  </div>
+</div>
+
 
         <hr className="border-white my-8" />
 
