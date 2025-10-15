@@ -3,6 +3,8 @@ import { useRef, useEffect } from "react";
 const PartnerLogos: React.FC = () => {
   const partners = [
     { name: "Chicken story-food franchise client", logo: "/partner/01.jpg" },
+        {name: "Zaika Bakes & Restaurant", logo: "/partner/043.png"},
+
     { name: "dailogue digital gallery- Franchise Client of Franchise Media Kerala", logo: "/partner/02.png" },
     { name: "Frapino- franchise partner", logo: "/partner/03.png" },
     { name: "gelato cafe-ice cream franchise client", logo: "/partner/04.png" },
