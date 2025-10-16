@@ -2,83 +2,67 @@ import { useRef, useEffect } from "react";
 
 const PartnerLogos: React.FC = () => {
   const partners = [
-    { name: "Chicken story-food franchise client", logo: "/partner/01.jpg" },
-        {name: "Zaika Bakes & Restaurant", logo: "/partner/043.png"},
-
-    { name: "dailogue digital gallery- Franchise Client of Franchise Media Kerala", logo: "/partner/02.png" },
-    { name: "Frapino- franchise partner", logo: "/partner/03.png" },
-    { name: "gelato cafe-ice cream franchise client", logo: "/partner/04.png" },
-    { name: "Ht wingz - franchise restaurant client", logo: "/partner/05.png" },
-    { name: "Grapa’s Burger Lounge – burger franchise client", logo: "/partner/06.jpg" },
-    { name: "Chai Habbat – tea franchise client", logo: "/partner/07.jpg" },
-    { name: "Crunchy's -franchise client", logo: "/partner/08.jpg" },
-    { name: "Cake sudio -Successful franchise outlet developed by Franchise Media in Kerala", logo: "/partner/09.jpg" },
-    { name: "Cake lounge -Successful franchise outlet developed by Franchise Media in Kerala", logo: "/partner/010.jpg" },
-    { name: "tea studio -best franchise for cafe", logo: "/partner/011.jpg" },
-    { name: "Mobile Mate – mobile franchise ", logo: "/partner/012.png" },
-    { name: "Naradan’s – Franchise Media client", logo: "/partner/013.jpg" },
-    { name: "Nice Cream – ice cream franchise client", logo: "/partner/015.png" },
-    { name: "Kiwi Ice Cream – franchise client", logo: "/partner/016.png" },
-    { name: "Twist on  softserve & deserve", logo: "/partner/017.png" },
-    { name: "The charcoal bay", logo: "/partner/018.png" },
-    { name: "jaazo", logo: "/partner/019.png" },
-    { name: "kenz karam", logo: "/partner/020.png" },
-    { name: "taste of malabar", logo: "/partner/021.jpg" },
-    { name: "Albaik Feasto Express – restaurant franchise client", logo: "/partner/022.png" },
-    { name: "ampure", logo: "/partner/023.png" },
-    { name: "banwet", logo: "/partner/024.png" },
-    { name: "club sulaimani", logo: "/partner/025.png" },
-    { name: "frozen bottle ", logo: "/partner/026.png" },
-    { name: "fzone ", logo: "/partner/027.png" },
-    { name: "the grillax", logo: "/partner/029.png" },
-    { name: "hap &  hope ", logo: "/partner/030.png" },
-    { name: "Heroelectric", logo: "/partner/031.png" },
-    { name: "IFCS – Franchise Media corporate client", logo: "/partner/032.png" },
-    { name: "ojin", logo: "/partner/033.png" },
-    { name: "Parisons Tea House – tea franchise client", logo: "/partner/034.png" },
-    { name: "Vollmond – franchise client", logo: "/partner/035.png" },
-    { name: "wayn", logo: "/partner/036.png" },
-    { name: "team care & cure", logo: "/partner/037.png" },
-    { name: "avilpro", logo: "/partner/038.jpeg" },
-    { name: "Grama Bakes & Sweets – bakery franchise client", logo: "/partner/039.jpg" },
-    { name: "kpg roofings", logo: "/partner/040.jpeg" },
-        { name: "royal", logo: "/partner/041.jpg" },
-    { name: "kaymas", logo: "/partner/042.png" },
-
-
-    
-
-    
-  
-
-
-
-
-
-
+    { name: "Zaika Bakes & Restaurant", logo: "/partner/043.png", height: "h-16" },
+    { name: "Melban", logo: "/partner/044.png", height: "h-24" },
+    { name: "Chicken Story - Food Franchise Client", logo: "/partner/01.jpg", height: "h-20" },
+    { name: "Dialogue Digital Gallery", logo: "/partner/02.png", height: "h-30" },
+    { name: "Frapino", logo: "/partner/03.png", height: "h-30" },
+    { name: "Gelato Cafe", logo: "/partner/04.png", height: "h-20" },
+    { name: "Ht Wingz", logo: "/partner/05.png", height: "h-34" },
+    { name: "Grapa’s Burger Lounge", logo: "/partner/06.jpg", height: "h-20" },
+    { name: "Chai Habbat", logo: "/partner/07.jpg", height: "h-14" },
+    { name: "Crunchy's", logo: "/partner/08.jpg", height: "h-24" },
+    { name: "Cake Studio", logo: "/partner/09.jpg", height: "h-20" },
+    { name: "Cake Lounge", logo: "/partner/010.jpg", height: "h-20" },
+    { name: "Tea Studio", logo: "/partner/011.jpg", height: "h-20" },
+    { name: "Mobile Mate", logo: "/partner/012.png", height: "h-10" },
+    { name: "Naradan’s", logo: "/partner/013.jpg", height: "h-20" },
+    { name: "Nice Cream", logo: "/partner/015.png", height: "h-26" },
+    { name: "Kiwi Ice Cream", logo: "/partner/016.png", height: "h-20" },
+    { name: "Twist on Softserve & Deserve", logo: "/partner/017.png", height: "h-34" },
+    { name: "The Charcoal Bay", logo: "/partner/018.png", height: "h-24" },
+    { name: "Jaazo", logo: "/partner/019.png", height: "h-20" },
+    { name: "Kenz Karam", logo: "/partner/020.png", height: "h-20" },
+    { name: "Taste of Malabar", logo: "/partner/021.jpg", height: "h-40" },
+    { name: "Albaik Feasto Express", logo: "/partner/022.png", height: "h-24" },
+    { name: "Ampure", logo: "/partner/023.png", height: "h-34" },
+    { name: "Banwet", logo: "/partner/024.png", height: "h-20" },
+    { name: "Club Sulaimani", logo: "/partner/025.png", height: "h-22" },
+    { name: "Frozen Bottle", logo: "/partner/026.png", height: "h-32" },
+    { name: "Fzone", logo: "/partner/027.png", height: "h-20" },
+    { name: "The Grillax", logo: "/partner/029.png", height: "h-26" },
+    { name: "Hap & Hope", logo: "/partner/030.png", height: "h-12" },
+    { name: "Heroelectric", logo: "/partner/031.png", height: "h-38" },
+    { name: "IFCS", logo: "/partner/032.png", height: "h-32" },
+    { name: "Ojin", logo: "/partner/033.png", height: "h-20" },
+    { name: "Parisons Tea House", logo: "/partner/034.png", height: "h-34" },
+    { name: "Vollmond", logo: "/partner/035.png", height: "h-20" },
+    { name: "Wayn", logo: "/partner/036.png", height: "h-38" },
+    { name: "Team Care & Cure", logo: "/partner/037.png", height: "h-24" },
+    { name: "Avilpro", logo: "/partner/038.jpeg", height: "h-18" },
+    { name: "Grama Bakes & Sweets", logo: "/partner/039.jpg", height: "h-32" },
+    { name: "KPG Roofings", logo: "/partner/040.jpeg", height: "h-36" },
+    { name: "Royal", logo: "/partner/041.jpg", height: "h-20" },
+    { name: "Kaymas", logo: "/partner/042.png", height: "h-20" },
+    { name: "Cakevista", logo: "/partner/045.png", height: "h-16" },
+    { name: "Chaska Bun", logo: "/partner/046.png", height: "h-16" },
   ];
 
-  const scrollRef = useRef<HTMLDivElement>(null);   
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Auto scroll effect     
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
     let animationId: number;
     let scrollPosition = 0;
-    const scrollSpeed = 0.5; // Pixels per frame - adjust for faster/slower scrolling
+    const scrollSpeed = 0.5;
 
     const autoScroll = () => {
       if (!scrollContainer) return;
 
       scrollPosition += scrollSpeed;
-
-      // Reset scroll position when it reaches the end
-      if (
-        scrollPosition >=
-        scrollContainer.scrollWidth - scrollContainer.clientWidth
-      ) {
+      if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
         scrollPosition = 0;
       }
 
@@ -86,28 +70,18 @@ const PartnerLogos: React.FC = () => {
       animationId = requestAnimationFrame(autoScroll);
     };
 
-    // Start auto-scrolling
     animationId = requestAnimationFrame(autoScroll);
 
-    // Pause scrolling when user hovers over the container
-    const pauseScroll = () => {
-      cancelAnimationFrame(animationId);
-    };
-
-    const resumeScroll = () => {
-      animationId = requestAnimationFrame(autoScroll);
-    };
+    const pauseScroll = () => cancelAnimationFrame(animationId);
+    const resumeScroll = () => (animationId = requestAnimationFrame(autoScroll));
 
     scrollContainer.addEventListener("mouseenter", pauseScroll);
     scrollContainer.addEventListener("mouseleave", resumeScroll);
 
-    // Clean up on component unmount
     return () => {
       cancelAnimationFrame(animationId);
-      if (scrollContainer) {
-        scrollContainer.removeEventListener("mouseenter", pauseScroll);
-        scrollContainer.removeEventListener("mouseleave", resumeScroll);
-      }
+      scrollContainer.removeEventListener("mouseenter", pauseScroll);
+      scrollContainer.removeEventListener("mouseleave", resumeScroll);
     };
   }, []);
 
@@ -120,6 +94,7 @@ const PartnerLogos: React.FC = () => {
       >
         Our Clients
       </h2>
+
       <div
         ref={scrollRef}
         className="flex space-x-7 lg:space-x-20 overflow-x-auto hide-scrollbar"
@@ -130,12 +105,16 @@ const PartnerLogos: React.FC = () => {
         }}
       >
         {partners.map((partner, index) => (
-          <div key={index} className="flex-shrink-0 w-28 flex items-center">
+          <div
+            key={index}
+            className="flex-shrink-0 flex items-center justify-center"
+            title={partner.name}
+          >
             <img
               src={partner.logo}
-              className="w-full"
               alt={partner.name}
               draggable="false"
+              className={`object-contain w-auto ${partner.height}`}
             />
           </div>
         ))}

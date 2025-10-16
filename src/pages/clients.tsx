@@ -2,6 +2,7 @@
 
 const partners = [
   { name: "zaika bakes & restuarant", logo: "/partner/043.png", height: "h-16" },
+  {name:"melban",logo:"/partner/044.png", height: "h-24"},
   { name: "Chicken story-food franchise client", logo: "/partner/01.jpg", height: "h-20" },
   { name: "Dialogue Digital Gallery - Franchise Client of Franchise Media Kerala", logo: "/partner/02.png", height: "h-30" },
   { name: "Frapino - franchise partner", logo: "/partner/03.png", height: "h-30" },
@@ -31,7 +32,7 @@ const partners = [
   { name: "The Grillax", logo: "/partner/029.png", height: "h-26" },
   { name: "Hap & Hope", logo: "/partner/030.png", height: "h-12" },
   { name: "Heroelectric", logo: "/partner/031.png", height: "h-38" },
-    { name: "Avilpro", logo: "/partner/038.jpeg", height: "h-20" },
+    { name: "Avilpro", logo: "/partner/038.jpeg", height: "h-16" },
 
   { name: "IFCS – Franchise Media corporate client", logo: "/partner/032.png", height: "h-32" },
   { name: "Ojin", logo: "/partner/033.png", height: "h-20" },
@@ -43,6 +44,8 @@ const partners = [
   { name: "KPG Roofings", logo: "/partner/040.jpeg", height: "h-36" },
   { name: "Royal", logo: "/partner/041.jpg", height: "h-20" },
   { name: "Royal", logo: "/partner/042.png", height: "h-20" },
+  { name: "Cakevista", logo: "/partner/045.png", height: "h-16" },
+  { name: "Chaska Bun", logo: "/partner/046.png", height: "h-16" },
 ];
 
 export default function Clients() {
