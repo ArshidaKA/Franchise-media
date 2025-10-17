@@ -20,6 +20,7 @@ const PartnerLogos: React.FC = () => {
     { name: "Nice Cream", logo: "/partner/015.png", height: "h-26" },
     { name: "Kiwi Ice Cream", logo: "/partner/016.png", height: "h-20" },
     { name: "Twist on Softserve & Deserve", logo: "/partner/017.png", height: "h-34" },
+    
     { name: "The Charcoal Bay", logo: "/partner/018.png", height: "h-24" },
     { name: "Jaazo", logo: "/partner/019.png", height: "h-20" },
     { name: "Kenz Karam", logo: "/partner/020.png", height: "h-20" },
@@ -29,6 +30,7 @@ const PartnerLogos: React.FC = () => {
     { name: "Banwet", logo: "/partner/024.png", height: "h-20" },
     { name: "Club Sulaimani", logo: "/partner/025.png", height: "h-22" },
     { name: "Frozen Bottle", logo: "/partner/026.png", height: "h-32" },
+    
     { name: "Fzone", logo: "/partner/027.png", height: "h-20" },
     { name: "The Grillax", logo: "/partner/029.png", height: "h-26" },
     { name: "Hap & Hope", logo: "/partner/030.png", height: "h-12" },

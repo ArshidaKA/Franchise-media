@@ -54,7 +54,7 @@
     <changefreq>yearly</changefreq>
   </url>
 
-  <!-- Calicut -->
+  <!-- Cities -->
   <url>
     <loc>https://www.thefranchisemedia.com/calicut</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/calicut" />
@@ -64,7 +64,6 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Kochi -->
   <url>
     <loc>https://www.thefranchisemedia.com/kochi</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/kochi" />
@@ -74,7 +73,6 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Malappuram -->
   <url>
     <loc>https://www.thefranchisemedia.com/malappuram</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/malappuram" />
@@ -84,13 +82,34 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- UAE -->
   <url>
     <loc>https://www.thefranchisemedia.com/uae</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.thefranchisemedia.com/uae" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.thefranchisemedia.com/ar/uae" />
     <lastmod>2025-07-31</lastmod>
     <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://www.thefranchisemedia.com/blog/how-to-franchise-your-business-in-kerala</loc>
+    <lastmod>2025-10-04</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.thefranchisemedia.com/blog/top-franchise-opportunities-in-kerala</loc>
+    <lastmod>2025-10-03</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.thefranchisemedia.com/blog/why-uae-is-becoming-a-hotspot-for-franchise-businesses</loc>
+    <lastmod>2025-10-04</lastmod>
+    <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
