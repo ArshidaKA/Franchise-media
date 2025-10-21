@@ -1,10 +1,10 @@
-import Hero from "../components/blog/Hero"
+import Media from "../components/blog/Hero"
 
 
 const Blog = () => {
   return (
     <div>
-        <Hero />
+    <Media />
     </div>
   )
 }

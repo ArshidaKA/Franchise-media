@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Hero = () => {
+const Media = () => {
   // State for the main media image
   const [mainImage, setMainImage] = useState("/gallery/2.png");
 
@@ -109,4 +109,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Media;

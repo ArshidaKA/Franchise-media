@@ -1,4 +1,4 @@
-// src/pages/Clients.jsx
+import { Helmet } from "react-helmet-async";
 
 const partners = [
   { name: "zaika bakes & restuarant", logo: "/partner/043.png", height: "h-16" },
@@ -50,29 +50,48 @@ const partners = [
 
 export default function Clients() {
   return (
-    <section
-      className="px-6 py-12 bg-gray-50"
-      data-aos="fade-up"
-      data-aos-duration="1100"
-    >
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
-        Our Clients & Partners
-      </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center">
-        {partners.map((partner, index) => (
-          <div
-            key={index}
-            className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition flex items-center justify-center w-full h-28"
-            title={partner.name}
-          >
-            <img
-              src={partner.logo}
-              alt={partner.name}
-              className={`object-contain max-w-full ${partner.height}`}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <Helmet>
+        <title>Clients & Partners | Franchise Media</title>
+        <meta
+          name="description"
+          content="Discover Franchise Media's trusted clients and partners in food, retail, and service franchises. Explore how our strategies help brands grow across India and UAE."
+        />
+        <meta
+          name="keywords"
+          content="Franchise Media clients, business partners, franchise collaborations, brand growth, franchise marketing Kerala, franchise consulting"
+        />
+        <meta property="og:title" content="Clients & Partners | Franchise Media" />
+        <meta property="og:description" content="Our valued franchise partners and business collaborations across industries." />
+        <meta property="og:image" content="https://yourdomain.com/og-image-clients.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/clients" />
+      </Helmet>
+
+      <section
+        className="px-6 py-12 bg-gray-50"
+        data-aos="fade-up"
+        data-aos-duration="1100"
+      >
+        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+          Our Clients & Partners
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition flex items-center justify-center w-full h-28"
+              title={partner.name}
+            >
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                className={`object-contain max-w-full ${partner.height}`}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
