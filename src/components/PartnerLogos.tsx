@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 
 const PartnerLogos: React.FC = () => {
   const partners = [
-    { name: "Zaika Bakes & Restaurant", logo: "/partner/043.png", height: "h-16" },
+    // { name: "Zaika Bakes & Restaurant", logo: "/partner/043.png", height: "h-16" },
     { name: "Melban", logo: "/partner/044.png", height: "h-24" },
     { name: "Chicken Story - Food Franchise Client", logo: "/partner/01.jpg", height: "h-20" },
     { name: "Dialogue Digital Gallery", logo: "/partner/02.png", height: "h-30" },
@@ -20,7 +20,6 @@ const PartnerLogos: React.FC = () => {
     { name: "Nice Cream", logo: "/partner/015.png", height: "h-26" },
     { name: "Kiwi Ice Cream", logo: "/partner/016.png", height: "h-20" },
     { name: "Twist on Softserve & Deserve", logo: "/partner/017.png", height: "h-34" },
-    
     { name: "The Charcoal Bay", logo: "/partner/018.png", height: "h-24" },
     { name: "Jaazo", logo: "/partner/019.png", height: "h-20" },
     { name: "Kenz Karam", logo: "/partner/020.png", height: "h-20" },
@@ -30,7 +29,6 @@ const PartnerLogos: React.FC = () => {
     { name: "Banwet", logo: "/partner/024.png", height: "h-20" },
     { name: "Club Sulaimani", logo: "/partner/025.png", height: "h-22" },
     { name: "Frozen Bottle", logo: "/partner/026.png", height: "h-32" },
-    
     { name: "Fzone", logo: "/partner/027.png", height: "h-20" },
     { name: "The Grillax", logo: "/partner/029.png", height: "h-26" },
     { name: "Hap & Hope", logo: "/partner/030.png", height: "h-12" },
@@ -46,46 +44,58 @@ const PartnerLogos: React.FC = () => {
     { name: "KPG Roofings", logo: "/partner/040.jpeg", height: "h-36" },
     { name: "Royal", logo: "/partner/041.jpg", height: "h-20" },
     { name: "Kaymas", logo: "/partner/042.png", height: "h-20" },
-    { name: "Cakevista", logo: "/partner/045.png", height: "h-16" },
+    // { name: "Cakevista", logo: "/partner/045.png", height: "h-16" },
     { name: "Chaska Bun", logo: "/partner/046.png", height: "h-16" },
   ];
 
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollRef1 = useRef<HTMLDivElement>(null);
+  const scrollRef2 = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-
-    let animationId: number;
-    let scrollPosition = 0;
-    const scrollSpeed = 0.5;
-
-    const autoScroll = () => {
+  const useAutoScroll = (ref: React.RefObject<HTMLDivElement>, speed: number, direction: "left" | "right") => {
+    useEffect(() => {
+      const scrollContainer = ref.current;
       if (!scrollContainer) return;
+      let animationId: number;
+      let scrollPosition = 0;
 
-      scrollPosition += scrollSpeed;
-      if (scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-        scrollPosition = 0;
-      }
+      const autoScroll = () => {
+        if (!scrollContainer) return;
 
-      scrollContainer.scrollLeft = scrollPosition;
+        scrollPosition += direction === "right" ? speed : -speed;
+
+        // Wrap around scrolling
+        if (direction === "right" && scrollPosition >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+          scrollPosition = 0;
+        } else if (direction === "left" && scrollPosition <= 0) {
+          scrollPosition = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        }
+
+        scrollContainer.scrollLeft = scrollPosition;
+        animationId = requestAnimationFrame(autoScroll);
+      };
+
       animationId = requestAnimationFrame(autoScroll);
-    };
+      const pause = () => cancelAnimationFrame(animationId);
+      const resume = () => (animationId = requestAnimationFrame(autoScroll));
+      scrollContainer.addEventListener("mouseenter", pause);
+      scrollContainer.addEventListener("mouseleave", resume);
 
-    animationId = requestAnimationFrame(autoScroll);
+      return () => {
+        cancelAnimationFrame(animationId);
+        scrollContainer.removeEventListener("mouseenter", pause);
+        scrollContainer.removeEventListener("mouseleave", resume);
+      };
+    }, [ref, speed, direction]);
+  };
 
-    const pauseScroll = () => cancelAnimationFrame(animationId);
-    const resumeScroll = () => (animationId = requestAnimationFrame(autoScroll));
+  // Split partners for two lines
+  const mid = Math.ceil(partners.length / 2);
+  const firstRow = partners.slice(0, mid);
+  const secondRow = partners.slice(mid);
 
-    scrollContainer.addEventListener("mouseenter", pauseScroll);
-    scrollContainer.addEventListener("mouseleave", resumeScroll);
-
-    return () => {
-      cancelAnimationFrame(animationId);
-      scrollContainer.removeEventListener("mouseenter", pauseScroll);
-      scrollContainer.removeEventListener("mouseleave", resumeScroll);
-    };
-  }, []);
+  // Apply opposite scroll directions
+  useAutoScroll(scrollRef1, 0.6, "right");
+  useAutoScroll(scrollRef2, 0.6, "left");
 
   return (
     <section className="py-10 px-6 md:px-12 lg:px-20 bg-white max-w-7xl mx-auto">
@@ -97,8 +107,31 @@ const PartnerLogos: React.FC = () => {
         Our Clients
       </h2>
 
+      {/* Top Row - scrolls right */}
       <div
-        ref={scrollRef}
+        ref={scrollRef1}
+        className="flex space-x-7 lg:space-x-20 overflow-x-auto hide-scrollbar mb-8"
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+          WebkitOverflowScrolling: "touch",
+        }}
+      >
+        {firstRow.map((partner, index) => (
+          <div key={index} className="flex-shrink-0 flex items-center justify-center" title={partner.name}>
+            <img
+              src={partner.logo}
+              alt={partner.name}
+              draggable="false"
+              className={`object-contain w-auto ${partner.height}`}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom Row - scrolls left */}
+      <div
+        ref={scrollRef2}
         className="flex space-x-7 lg:space-x-20 overflow-x-auto hide-scrollbar"
         style={{
           scrollbarWidth: "none",
@@ -106,12 +139,8 @@ const PartnerLogos: React.FC = () => {
           WebkitOverflowScrolling: "touch",
         }}
       >
-        {partners.map((partner, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 flex items-center justify-center"
-            title={partner.name}
-          >
+        {secondRow.map((partner, index) => (
+          <div key={index} className="flex-shrink-0 flex items-center justify-center" title={partner.name}>
             <img
               src={partner.logo}
               alt={partner.name}
