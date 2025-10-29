@@ -94,8 +94,8 @@ const PartnerLogos: React.FC = () => {
   const secondRow = partners.slice(mid);
 
   // Apply opposite scroll directions
-  useAutoScroll(scrollRef1, 0.6, "right");
-  useAutoScroll(scrollRef2, 0.6, "left");
+  useAutoScroll(scrollRef1, 1.3, "right");
+  useAutoScroll(scrollRef2, 1.3, "left");
 
   return (
     <section className="py-10 px-6 md:px-12 lg:px-20 bg-white max-w-7xl mx-auto">
