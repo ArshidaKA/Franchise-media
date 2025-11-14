@@ -68,7 +68,7 @@ const BlogPostPage: React.FC = () => {
         <img
           src={post.imageUrl}
           alt={post.title}
-          className="w-full h-[300px] object-cover rounded-lg my-6"
+          className="w-full h-[400px] object-cover rounded-lg my-6"
         />
       )}
 
