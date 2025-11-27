@@ -17,6 +17,7 @@ import StikyCall from "./components/StickyCall";
 import Clients from "./pages/clients";
 import Bloglist from "./components/blog/Bloglist";
 import BlogPost from "./components/blog/BlogPost";
+import BusinessDetails  from "./components/OpportunitiesDetail"
 
 
 
@@ -48,6 +49,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/safeOption" element={<SafeOption />} />
         <Route path="/franchisable" element={<Franchisable />} />
+        <Route path="/business/:slug" element={<BusinessDetails />} />
+
         <Route path="/blog" element={<Bloglist />} />
           <Route path="/blog/:slug" element={<BlogPost/>} />
       </Routes>

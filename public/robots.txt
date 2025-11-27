@@ -1,9 +1,10 @@
 # robots.txt for https://www.thefranchisemedia.com
 
+# --- GENERAL ACCESS ---
 User-agent: *
 Allow: /
 
-# Disallow sensitive/unnecessary files
+# --- BLOCK SENSITIVE DIRECTORIES ---
 Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
@@ -11,5 +12,40 @@ Disallow: /json/
 Disallow: /*.env$
 Disallow: /*.log$
 
-# Sitemap location
+# --- GOOGLE SEARCH ---
+User-agent: Googlebot
+Allow: /
+
+# --- GOOGLE GEMINI AI CRAWLER ---
+User-agent: GoogleOther
+Allow: /
+
+# --- BING SEARCH & MICROSOFT COPILOT ---
+User-agent: Bingbot
+Allow: /
+
+# --- OPENAI / CHATGPT / GPTBot ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# --- PERPLEXITY AI ---
+User-agent: PerplexityBot
+Allow: /
+
+# --- CLAUDE / ANTHROPIC ---
+User-agent: anthropic-ai
+Allow: /
+
+# --- META / FACEBOOK ---
+User-agent: FacebookExternalHit
+Allow: /
+
+# --- DUCKDUCKGO AI ---
+User-agent: DuckAssistBot
+Allow: /
+
+# --- SITEMAP ---
 Sitemap: https://www.thefranchisemedia.com/sitemap.xml

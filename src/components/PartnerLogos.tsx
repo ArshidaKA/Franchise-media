@@ -4,6 +4,8 @@ const PartnerLogos: React.FC = () => {
   const partners = [
     // { name: "Zaika Bakes & Restaurant", logo: "/partner/043.png", height: "h-16" },
     { name: "Melban", logo: "/partner/044.png", height: "h-24" },
+      {name:"mozon",logo:"/partner/047.png", height: "h-20"},
+
     { name: "Chicken Story - Food Franchise Client", logo: "/partner/01.jpg", height: "h-20" },
     { name: "Dialogue Digital Gallery", logo: "/partner/02.png", height: "h-30" },
     { name: "Frapino", logo: "/partner/03.png", height: "h-30" },
