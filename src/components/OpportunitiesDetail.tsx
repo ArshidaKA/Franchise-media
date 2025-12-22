@@ -1,9 +1,47 @@
+import { ReactNode } from "react";
 import { useParams, Link } from "react-router-dom";
 import data from "../FranchiseOpportunties/FranchiseOppertunities";
 
+/* ---------- Types ---------- */
+
+interface Franchise {
+  slug: string;
+  title: string;
+  category: string;
+  image: string;
+  area: string;
+  investment: string;
+  roi: string;
+  about: string;
+  franchisedetails: string;
+  description: string;
+  vision?: string;
+  mission?: string;
+}
+
+interface InfoCardProps {
+  label: string;
+  value: string;
+}
+
+interface SectionProps {
+  title: string;
+  children: ReactNode;
+}
+
+interface InputProps {
+  type?: string;
+  placeholder: string;
+}
+
+/* ---------- Main Component ---------- */
+
 const BusinessDetail = () => {
-  const { slug } = useParams();
-  const business = data.find((item) => item.slug === slug);
+  const { slug } = useParams<{ slug: string }>();
+
+  const business = (data as Franchise[]).find(
+    (item) => item.slug === slug
+  );
 
   if (!business) {
     return (
@@ -43,7 +81,7 @@ const BusinessDetail = () => {
       {/* About Brand */}
       <Section title="About Brand">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <p className="whitespace-pre-line text-xl  text-gray-600 leading-relaxed">
+          <p className="whitespace-pre-line text-xl text-gray-600 leading-relaxed">
             {business.about}
           </p>
 
@@ -54,35 +92,33 @@ const BusinessDetail = () => {
           />
         </div>
       </Section>
+
       {/* Vision & Mission */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-  {/* Vision */}
-  <div className="rounded-2xl p-8 shadow-lg bg-[#0f1e3a] text-white">
-    <h3 className="text-2xl font-bold mb-4 tracking-wide">
-      Our Vision
-    </h3>
-    <p className="text-lg leading-relaxed opacity-90">
-      {business.vision || 
-        "To become a leading and trusted brand by delivering consistent quality, innovation, and value across all our franchise operations."}
-    </p>
-  </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="rounded-2xl p-8 shadow-lg bg-[#0f1e3a] text-white">
+          <h3 className="text-2xl font-bold mb-4 tracking-wide">
+            Our Vision
+          </h3>
+          <p className="text-lg leading-relaxed opacity-90">
+            {business.vision ||
+              "To become a leading and trusted brand by delivering consistent quality, innovation, and value across all our franchise operations."}
+          </p>
+        </div>
 
-  {/* Mission */}
-  <div className="rounded-2xl p-8 shadow-lg bg-[#0f1e3a] text-white">
-    <h3 className="text-2xl font-bold mb-4 tracking-wide">
-      Our Mission
-    </h3>
-    <p className="text-lg leading-relaxed opacity-90">
-      {business.mission ||
-        "To empower entrepreneurs through a proven business model, strong support system, and sustainable growth opportunities."}
-    </p>
-  </div>
-</div>
-
+        <div className="rounded-2xl p-8 shadow-lg bg-[#0f1e3a] text-white">
+          <h3 className="text-2xl font-bold mb-4 tracking-wide">
+            Our Mission
+          </h3>
+          <p className="text-lg leading-relaxed opacity-90">
+            {business.mission ||
+              "To empower entrepreneurs through a proven business model, strong support system, and sustainable growth opportunities."}
+          </p>
+        </div>
+      </div>
 
       {/* Franchise Details */}
       <Section title="Franchise Details">
-        <ul className="whitespace-pre-line text-gray-600  text-xl font-semibold leading-relaxed list-disc pl-5 space-y-2">
+        <ul className="whitespace-pre-line text-gray-600 text-xl font-semibold leading-relaxed list-disc pl-5 space-y-2">
           {business.franchisedetails
             .split("\n")
             .map((line, i) => (
@@ -112,7 +148,7 @@ const BusinessDetail = () => {
         </h2>
 
         <div className="flex space-x-6 overflow-x-auto pb-4 hide-scrollbar snap-x snap-mandatory">
-          {data
+          {(data as Franchise[])
             .filter((item) => item.slug !== business.slug)
             .map((item, index) => (
               <Link
@@ -159,22 +195,20 @@ export default BusinessDetail;
 
 /* ---------- Reusable Components ---------- */
 
-const InfoCard = ({ label, value }) => (
+const InfoCard: React.FC<InfoCardProps> = ({ label, value }) => (
   <div className="rounded-2xl p-6 text-center shadow-lg bg-[#0f1e3a] text-white">
     <p className="text-xs uppercase tracking-widest opacity-70 mb-2">
       {label}
     </p>
-    <p className="text-xl font-semibold">
-      {value}
-    </p>
+    <p className="text-xl font-semibold">{value}</p>
   </div>
 );
 
-const Section = ({ title, children }) => (
+const Section: React.FC<SectionProps> = ({ title, children }) => (
   <div className="mb-20">
     <h2 className="headingColor text-2xl font-semibold mb-6 inline-block">
       {title}
-      <span className="block w-14 h-[3px] bg-green-700 mt-2 rounded-full"></span>
+      <span className="block w-14 h-[3px] bg-green-700 mt-2 rounded-full" />
     </h2>
 
     <div className="rounded-2xl p-8 bg-white shadow-md">
@@ -183,7 +217,10 @@ const Section = ({ title, children }) => (
   </div>
 );
 
-const Input = ({ type = "text", placeholder }) => (
+const Input: React.FC<InputProps> = ({
+  type = "text",
+  placeholder,
+}) => (
   <input
     type={type}
     placeholder={placeholder}
