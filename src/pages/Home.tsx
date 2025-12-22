@@ -5,7 +5,7 @@ import HeroSection from "../components/HeroSection";
 import PartnerLogos from "../components/PartnerLogos";
 import ServicesSection from "../components/ServicesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
-// import BusinessOpportunities from "../components/FranchiseOpportunites";
+import BusinessOpportunities from "../components/FranchiseOpportunites";
 
 const Home = () => {
   return (
@@ -28,8 +28,9 @@ const Home = () => {
 
       <HeroSection />
       <PartnerLogos />
-      {/* <BusinessOpportunities/> */}
       <ExpertiseSection />
+            <BusinessOpportunities/>
+
       <ServicesSection />
       <TestimonialsSection />
       <FeatureSection />

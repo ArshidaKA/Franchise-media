@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     { name: "About", path: "/about" },
     { name: "Service", path: "/service" },
     { name: "Media", path: "/media" },
-    // { name: "Clients", path: "/clients" },
+    { name: "Clients", path: "/clients" },
     {name:"blogs" ,path:"/blog"},
     { name: "Contact", path: "/contact" },
   ];

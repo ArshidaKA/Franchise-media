@@ -48,6 +48,8 @@ const PartnerLogos: React.FC = () => {
     { name: "Kaymas", logo: "/partner/042.png", height: "h-20" },
     // { name: "Cakevista", logo: "/partner/045.png", height: "h-16" },
     { name: "Chaska Bun", logo: "/partner/046.png", height: "h-16" },
+        { name: "Artic", logo: "/partner/048.png", height: "h-20" },
+
   ];
 
   const scrollRef1 = useRef<HTMLDivElement>(null);

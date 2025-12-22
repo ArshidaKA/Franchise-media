@@ -169,42 +169,72 @@ const HeroContact = () => {
               </button>
             </form>
 
-            {/* Location and Contact Info */}
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              className="p-6 rounded-3xl max-w-md flex flex-col gap-6"
-            >
-              <Link to="https://g.co/kgs/mDGgFtj">
-                <div className="flex items-start mb-4 gap-2">
-                  <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
-                  <div>
-                    <h4 className="text-sm contentFont font-semibold headingColor">
-                      Location
-                    </h4>
-                    <p className="text-sm contentFont contentColor">
-                      HiLITE Business Park, 1410, 4th Floor, Bypass, Thondayad,
-                      Kozhikode, Kerala 673014
-                    </p>
-                  </div>
-                </div>
-              </Link>
+{/* Location and Contact Info */}
+<div
+  data-aos="fade-up"
+  data-aos-duration="1200"
+  className="p-6 rounded-3xl max-w-md flex flex-col gap-10"
+>
 
-              <div className="flex items-start gap-4 mb-4">
-                <img src="/contact/call.png" className="w-8 h-8" alt="call" />
-                <div>
-                  <h4 className="text-sm contentFont font-semibold headingColor">
-                    Contact
-                  </h4>
-                  <p className="text-sm contentFont contentColor">
-                    +91 9207887722
-                  </p>
-                  <p className="text-sm contentFont contentColor">
-                    +971 58 558 7792
-                  </p>
-                </div>
-              </div>
-            </div>
+  {/* FIRST LOCATION BLOCK */}
+  <div>
+    <Link to="https://g.co/kgs/mDGgFtj">
+      <div className="flex items-start mb-4 gap-2">
+        <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
+        <div>
+          <h4 className="text-sm contentFont font-semibold headingColor">
+            Location
+          </h4>
+          <p className="text-sm contentFont contentColor">
+            HiLITE Business Park, 1410, 4th Floor, Bypass, Thondayad,
+            Kozhikode, Kerala 673014
+          </p>
+        </div>
+      </div>
+    </Link>
+
+    <div className="flex items-start gap-4 mb-4">
+      <img src="/contact/call.png" className="w-8 h-8" alt="call" />
+      <div>
+        <h4 className="text-sm contentFont font-semibold headingColor">
+          Contact
+        </h4>
+        <p className="text-sm contentFont contentColor">+91 9207887722</p>
+        <p className="text-sm contentFont contentColor">+91 9207887711</p>
+      </div>
+    </div>
+  </div>
+
+  {/* SECOND LOCATION BLOCK */}
+  <div>
+    <Link to="https://maps.app.goo.gl/uAE-office-location-link">
+      <div className="flex items-start mb-4 gap-2">
+        <img src="/contact/Map.png" className="w-10 h-10" alt="map" />
+        <div>
+          <h4 className="text-sm contentFont font-semibold headingColor">
+            Location
+          </h4>
+          <p className="text-sm contentFont contentColor">
+            Dubai UAE
+          </p>
+        </div>
+      </div>
+    </Link>
+
+    <div className="flex items-start gap-4 mb-4">
+      <img src="/contact/call.png" className="w-8 h-8" alt="call" />
+      <div>
+        <h4 className="text-sm contentFont font-semibold headingColor">
+          Contact
+        </h4>
+        <p className="text-sm contentFont contentColor">+971 58 558 7792</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
           </div>
 
           <div>
