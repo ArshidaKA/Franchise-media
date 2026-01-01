@@ -10,6 +10,8 @@ const partners = [
   { name: "Dialogue Digital Gallery - Franchise Client of Franchise Media Kerala", logo: "/partner/02.png", height: "h-30" },
   { name: "Frapino - franchise partner", logo: "/partner/03.png", height: "h-30" },
   { name: "Gelato Cafe - ice cream franchise client", logo: "/partner/04.png", height: "h-20" },
+    { name: "Artic", logo: "/partner/048.png", height: "h-20" },
+                    { name: "herbal park", logo: "/partner/049.png", height: "h-18" },
   { name: "Ht Wingz - franchise restaurant client", logo: "/partner/05.png", height: "h-34" },
   { name: "Grapa’s Burger Lounge – burger franchise client", logo: "/partner/06.jpg", height: "h-20" },
   { name: "Chai Habbat – tea franchise client", logo: "/partner/07.jpg", height: "h-14" },
@@ -49,7 +51,8 @@ const partners = [
   { name: "Royal", logo: "/partner/042.png", height: "h-20" },
   // { name: "Cakevista", logo: "/partner/045.png", height: "h-16" },
   { name: "Chaska Bun", logo: "/partner/046.png", height: "h-16" },
-    { name: "Artic", logo: "/partner/048.png", height: "h-20" },
+  
+
 
 ];
 
