@@ -355,7 +355,7 @@ const HeroContact = () => {
                 Contact us via email to explore exclusive franchise
                 opportunities and share your inquiries with our team
               </p>
-              <Link to="mailto:Info@franchisemedia.in">
+              <Link to="mailto:franchisemediaonline@gmail.com ">
                 <button className="bg-[#2B3A8F] contentFont cursor-pointer text-white py-2 px-8 rounded-lg hover:bg-indigo-900 transition duration-300 w-fit">
                   Send Email
                 </button>
