@@ -45,11 +45,10 @@ const partners = [
   { name: "Wayn", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602114/036_csdhfo.png", height: "h-38" },
   { name: "Team Care & Cure", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602118/037_suqblm.png", height: "h-24" },
   { name: "Grama Bakes & Sweets – bakery franchise client", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602120/039_dsmadg.jpg", height: "h-32" },
-  { name: "KPG Roofings", logo: "/partner/040.https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602120/040_acuacc.jpg", height: "h-36" },
+  { name: "KPG Roofings", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602120/040_acuacc.jpg", height: "h-36" },
   { name: "Royal", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602121/041_k3dmkq.jpg", height: "h-20" },
     { name: "Kaymas", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602127/042_pimzer.png", height: "h-20" },
-  { name: "Cakevista", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602125/045_p0lthg.png", height: "h-16" },
-  { name: "Chaska Bun", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602125/046_rjaf9f.png", height: "h-16" },
+    { name: "Chaska Bun", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602125/046_rjaf9f.png", height: "h-16" },
   
 
 
