@@ -50,6 +50,19 @@ const partners = [
     { name: "Kaymas", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602127/042_pimzer.png", height: "h-20" },
     { name: "Chaska Bun", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602125/046_rjaf9f.png", height: "h-16" },
   
+    { name: "equitea", logo: "/partner/050.jpg", height: "h-16" },
+        { name: "mechart", logo: "/partner/051.jpg", height: "h-38" },
+                                                                        {name:"sysgreen" , logo:"/partner/055.png" ,height:"h-14"},
+
+                { name: "classic", logo: "/partner/052.png", height: "h-16" },
+                {name:"ffc" , logo:"/partner/053.png" ,height:"h-14"},
+                                {name:"yaghma" , logo:"/partner/054.png" ,height:"h-14"},
+
+
+
+
+
+
 
 
 ];

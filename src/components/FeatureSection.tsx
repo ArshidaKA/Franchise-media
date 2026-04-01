@@ -1,7 +1,24 @@
 const FeatureSection = () => {
+  const videos = [
+    {
+      id: 1,
+      src: "https://www.youtube.com/embed/6h6Vy1MgYT4?si=9L0a9hU_Djw0ScZT",
+      
+    },
+    {
+      id: 2,
+      src: "https://www.youtube.com/embed/CoNalvzQbVs?si=LuJC7SYiMuzw1EPz",
+    },
+    {
+      id: 3,
+      src: "https://www.youtube.com/embed/3grDBdPstJc?si=Q-s2UlHONI6W2Nqu",
+    },
+  ];
+
   return (
     <div className="max-w-7xl mx-auto pt-6 pb-16">
-      <div className="text-center ">
+      {/* Heading */}
+      <div className="text-center">
         <h2
           data-aos="fade-up"
           data-aos-duration="1100"
@@ -19,36 +36,26 @@ const FeatureSection = () => {
         </p>
       </div>
 
-      {/* First Video */}
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1200"
-        className="flex justify-center items-center pt-10 px-2 md:px-0"
-      >
-        <iframe
-          className="w-full max-w-2xl aspect-video rounded-lg"
-          src="https://www.youtube.com/embed/6h6Vy1MgYT4?si=9L0a9hU_Djw0ScZT"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-
-      {/* Second Video */}
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1400"
-        className="flex justify-center items-center pt-10 px-2 md:px-0"
-      >
-        <iframe
-          className="w-full max-w-2xl aspect-video rounded-lg"
-          src="https://www.youtube.com/embed/CoNalvzQbVs?si=LuJC7SYiMuzw1EPz"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+      {/* Videos Grid */}
+      <div className="pt-10 px-2 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {videos.map((video, index) => (
+          <div
+            key={video.id}
+            data-aos="fade-up"
+            data-aos-duration={1200 + index * 200}
+            className="w-full"
+          >
+            <iframe
+              className="w-full aspect-video rounded-lg shadow-lg"
+              src={video.src}
+              title={`YouTube video ${video.id}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -42,12 +42,12 @@ const BlogList: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {sortedPosts.map((post: BlogPost) => (
             <Link key={post.id} to={`/blog/${post.slug}`} className="group">
-              <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500 h-48 bg-gray-100 flex items-center justify-center">
-                <img
-                  src={post.imageUrl}
-                  alt={post.title}
-                  className="group-hover:scale-105 transition-transform duration-300"
-                />
+              <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500 h-98 bg-gray-100">
+             <img
+  src={post.imageUrl}
+  alt={post.title}
+  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+/>
               </div>
 
               <h4 className="mt-4 text-xl md:text-2xl font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors duration-300 line-clamp-2">

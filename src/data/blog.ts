@@ -14,7 +14,7 @@ const blogPosts: BlogPost[] = [
     id: 1,
     title: "How to Franchise Your Business in Kerala: Step by Step guide.  ",
     slug: "how-to-franchise-your-business-in-kerala",
-    imageUrl:"https://cdn.corporatefinanceinstitute.com/assets/franchise-1024x682.jpeg",
+    imageUrl:"/blog/franchise-kerala.jpeg",
     excerpt:`If you’ve built a successful business and are now wondering how to franchise your business 
 in Kerala, you’re on the right track. Kerala is one of India’s most promising markets for food, 
 retail, wellness, education, and hospitality ventures. With a strong consumer base, high 
@@ -91,7 +91,7 @@ publishedAt: "2025-10-04",},
     id: 2,
     title: "Top Franchise Opportunities in Kerala: Best Sectors to invest in 2026 ",
     slug: "top-franchise-opportunities-in-kerala",
-    imageUrl:"/blog/blog2.png",
+    imageUrl:"/blog/kerala.jpeg",
     publishedAt: "2025-10-03",
     content:
  `If you’re looking for the best franchise in Kerala or exploring low-cost franchise business in 
@@ -158,7 +158,7 @@ entrepreneurship.  `  },
     id: 3,
     title: "Why UAE is Becoming a Hotspot for Franchise Businesses?",     
     slug: "why-uae-is-becoming-a-hotspot-for-franchise-businesses",
-    imageUrl:"https://sprottshaw.com/wp-content/uploads/2019/12/GettyImages-842866442.jpg",
+    imageUrl:"/blog/uae.jpeg",
     publishedAt: "2025-10-04",
     content:`The United Arab Emirates (UAE) has transformed into one of the most attractive destinations 
 for franchise expansion. Over the past decade, the country has positioned itself as a gateway 
@@ -217,7 +217,7 @@ these trends confirm the UAE as a genuine hotspot for franchise success.
   id: 4,
   title: "Common mistakes to avoid when franchising ",     
   slug:"common-mistakes-to-avoid-when-franchising",
-  imageUrl:"/blog/blog4.png",
+  imageUrl:"/blog/common-mistake.jpeg",
   publishedAt: "2025-10-14",
   content:`
   When it comes to franchising, few factors play as decisive a role as location. Even with a 
@@ -304,7 +304,7 @@ profitability.
   id: 5,
   title: "The Importance of Location in Franchise Success ",     
   slug:"the-importance-of-location-in-franchise-success",
-  imageUrl:"/blog/blog5.png",
+  imageUrl:"/blog/location.jpeg",
   publishedAt: "2025-10-30",
   content:`The Importance of Location in Franchise Success When it comes to franchising, 
   few factors play as decisive a role as location. Even with a strong brand, efficient operations, and top-quality products, a poor location can limit growth and profitability. For business owners and investors, 
