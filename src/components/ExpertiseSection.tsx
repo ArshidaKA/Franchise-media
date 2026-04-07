@@ -13,20 +13,21 @@ const ExpertiseSection: React.FC = () => {
             data-aos-duration="1100"
             className="text-2xl md:text-4xl font-bold headingColor mb-6"
           >
-            Franchise Your Business?
-          </h2>
+Franchise Your Business with Expert Consultants?          </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="1300"
             className="contentColor text-base lg:text-lg contentFont mb-8"
           >
-            If you have a successful business model, it's important to pursue
-            growth that is secure, sustainable, and requires less capital
-            investment. To plan this process effectively, you will need expert
-            guidance for different areas. Reach out to us for franchise
-            consulting, development, implementation, marketing phase and
-            discover how franchising can help you unlock new avenues for growth!
+            If you have a successful business model, our franchise consultants in Kerala help you expand through structured franchise development, legal documentation, and scalable systems. We support businesses in Calicut, Malappuram, and across Kerala, as well as UAE expansion, ensuring sustainable growth with minimal risk and investment.
           </p>
+            <p
+            data-aos="fade-up"
+            data-aos-duration="1300"
+            className="contentColor text-base lg:text-lg contentFont mb-8"
+          >
+From franchise planning and SOP creation to marketing and franchisee recruitment, we provide end-to-end franchise consulting services tailored for startups and established brands.          </p>
+          
 
           <Button
             navigateTo="/service#FranchiseYourBusiness"
@@ -40,8 +41,7 @@ const ExpertiseSection: React.FC = () => {
         >
           <img
             src="/home/business01.png"
-            alt="Successful franchise outlet developed by Franchise Media in Kerala"
-            className="w-full max-w-md h-auto"
+alt="Franchise consulting services in Kerala by Franchise Media helping businesses expand"            className="w-full max-w-md h-auto"
           />
         </div>
       </div>

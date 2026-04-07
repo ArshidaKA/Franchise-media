@@ -12,8 +12,7 @@ const ServicesSection: React.FC = () => {
               data-aos="fade-up"
               data-aos-duration="1600"
               src="/home/business02.png"
-              alt="Marketing Service Illustration"
-              className="w-full max-w-md h-auto mx-auto"
+alt="Franchise marketing services in Kerala generating franchise leads"              className="w-full max-w-md h-auto mx-auto"
             />
           </div>
           <div className="order-1 md:order-2">
@@ -30,13 +29,9 @@ const ServicesSection: React.FC = () => {
               data-aos-duration="1300"
               className="contentColor text-base lg:text-lg contentFont mb-8"
             >
-              If you have a successful business model, it's important to pursue
-              growth that is secure, sustainable, and requires less capital
-              investment. To plan this process effectively, you will need expert
-              guidance for different areas. Reach out to us for franchise
-              consulting, development, implementation, marketing phase and
-              discover how franchising can help you unlock new avenues for
-              growth!
+              Our franchise marketing services help brands generate high-quality franchise leads
+  across Kerala and the UAE. We create targeted campaigns using Google Ads, Meta Ads,
+  and landing pages to attract serious investors and scale your franchise network.
             </p>
 
             <Button
@@ -62,11 +57,9 @@ const ServicesSection: React.FC = () => {
               data-aos-duration="1300"
               className="contentColor text-base lg:text-lg contentFont mb-8"
             >
-              Starting a new franchise can be an exciting yet challenging
-              journey. As you embark on this venture, you may encounter various
-              matters. Having the right support can make a significant
-              difference in overcoming hurdles and ensuring a smooth operational
-              launch.
+              Looking to start a franchise business in Kerala? We help entrepreneurs choose the
+  right franchise opportunities, understand investment requirements, and launch
+  successfully with complete support including legal, operations, and marketing.
             </p>
 
             <Button
@@ -81,8 +74,7 @@ const ServicesSection: React.FC = () => {
           >
             <img
               src="/home/business03.png"
-              alt="Start Franchise Illustration"
-              className="w-full max-w-md h-auto"
+alt="Start a franchise business in Kerala with expert consulting support"              className="w-full max-w-md h-auto"
             />
           </div>
         </div>

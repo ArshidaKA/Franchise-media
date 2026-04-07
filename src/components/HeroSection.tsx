@@ -17,22 +17,23 @@ const HeroSection: React.FC = () => {
             data-aos-duration="1100"
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold headingColor leading-tight"
           >
-            A Thriving Platform for Business Expertise!
-          </h1>
+<h1>
+Best Franchise Consultants in Kerala & UAE
+</h1>          </h1>
 
           <p
             data-aos="fade-up"
             data-aos-duration="1300"
             className="mt-4 sm:mt-6 contentColor contentFont text-sm sm:text-base lg:text-lg mb-6"
           >
-            Empowering your journey to global financial success through
-            customised and personalised financial Consulting for every client
+           We are leading franchise consultants in Kerala helping businesses grow through franchise model development, legal documentation, and expansion strategies in Calicut, Malappuram, and UAE markets.
           </p>
+          
 
           <div className="flex justify-center md:justify-start">
             <Button
               clickHandle={() => setIsPopupOpen(true)}
-              label="Request for a consultation"
+              label="Get Free Franchise Consultation"
             />
           </div>
         </div>
@@ -53,6 +54,9 @@ const HeroSection: React.FC = () => {
   allowFullScreen
   
 />
+<p className="text-xs text-gray-500 mt-2 text-center">
+Watch how our franchise consulting services help businesses expand in Kerala and UAE.
+</p>
           </div>
         </div>
       </div>

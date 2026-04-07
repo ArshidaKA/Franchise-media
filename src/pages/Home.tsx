@@ -24,11 +24,11 @@ const Home = () => {
         <meta name="ICBM" content="11.2924, 75.8412" />
 
        
-        <meta name="gptbot" content="index, follow" />
+        {/* <meta name="gptbot" content="index, follow" />
         <meta name="ChatGPT-User" content="index, follow" />
         <meta name="perplexitybot" content="index, follow" />
         <meta name="anthropic-ai" content="index, follow" />
-        <meta name="GoogleOther" content="index, follow" />
+        <meta name="GoogleOther" content="index, follow" /> */}
 
         
         <meta name="google-site-verification" content="Lx_6a-bgtHnuVBYp6uHkvUMmX8IJW5YLgv0akjZLIo8" />
@@ -38,10 +38,10 @@ const Home = () => {
           name="description"
           content="Franchise Media – Kerala’s #1 franchise consulting company. Best franchise consultants in Calicut and Malappuram offering model development, legal documentation, franchise recruitment, marketing & expansion support across Kerala and the UAE."
         />
-        <meta
+        {/* <meta
           name="keywords"
           content="best franchise consultants in Calicut, best franchise consultants in Malappuram, franchise consultants Kerala, franchise advisors Kozhikode, franchise consulting company Kerala, franchise model development Kerala, low-cost franchise Kerala, franchise legal services Kerala, franchise marketing Kerala, franchise consultants UAE"
-        />
+        /> */}
 
         
         <link rel="canonical" href="https://www.thefranchisemedia.com/" />
