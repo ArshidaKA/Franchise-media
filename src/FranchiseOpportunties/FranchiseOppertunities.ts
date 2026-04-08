@@ -1,4 +1,37 @@
 const data = [
+    
+    {
+  category: "Healthcare / Pharmacy",
+  title: "WAYN Medicare",
+  slug: "wayn-medicare",
+  image: "/brandphoto/wayn.png",
+  area: "200-300 sqft",
+  investment: "15,00,000",
+  roi: "Break-even within 24 to 36 months",
+  description: `
+WAYN Medicare is a trusted healthcare retail brand focused on providing quality medicines, professional service, and accessible care to communities across Kerala.
+`,
+  about: `
+WAYN Medicare is a rapidly growing healthcare retail brand founded in 2020, with a strong presence across Wayanad and Kannur. Built on trust, quality, and professional service, the brand has become a reliable name in the pharmacy sector.
+
+Established by Mr. Sajad A P, Mr. Noufal K, and Mr. Davood M V, WAYN Medicare operates 5+ outlets serving thousands of families. The brand focuses on improving healthcare accessibility, especially in rural and underserved areas.
+
+With a structured franchise model, WAYN Medicare aims to expand across Kerala, ensuring every community has access to quality healthcare products and reliable pharmacy services.
+`,
+  vision: `
+To create Kerala’s most accessible and trusted pharmacy network, delivering quality healthcare to every home across both rural and urban communities.
+`,
+  mission: `
+To build trust by providing high-quality healthcare products across Kerala, with a strong focus on improving accessibility in rural and underserved areas.
+`,
+  franchisedetails: `Area required - 200-300 sqft
+Initial investment - 15,00,000
+Interior & setup - 6,00,000
+Stock (Medicines + FMCG) - 7,00,000
+Franchise fee - 2,00,000
+Business model - FICO / FOCO
+Break-even - 24 to 36 months`
+},
 
     {
     category: "Food and Beverage",
