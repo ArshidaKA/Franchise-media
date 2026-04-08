@@ -72,7 +72,7 @@ const TestimonialsSection: React.FC = () => {
             data-aos-duration="1100"
             className="text-2xl md:text-4xl font-bold headingColor mb-4"
           >
-            What Our Clients Say About Franchise Media in Kerala
+            What Our Clients Say 
           </h2>
           <p
             data-aos="fade-up"

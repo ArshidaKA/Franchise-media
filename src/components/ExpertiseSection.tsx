@@ -19,7 +19,7 @@ Franchise Your Business with Expert Consultants?          </h2>
             data-aos-duration="1300"
             className="contentColor text-base lg:text-lg contentFont mb-8"
           >
-            If you have a successful business model, our franchise consultants in Kerala help you expand through structured franchise development, legal documentation, and scalable systems. We support businesses in Calicut, Malappuram, and across Kerala, as well as UAE expansion, ensuring sustainable growth with minimal risk and investment.
+            If you have a successful business model, our franchise consultants help you expand through structured franchise development, legal documentation, and scalable systems. We support businesses in Calicut, Malappuram, and across Kerala, as well as UAE expansion, ensuring sustainable growth with minimal risk and investment.
           </p>
             <p
             data-aos="fade-up"
