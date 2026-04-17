@@ -33,7 +33,7 @@ Best Franchise Consultants in Kerala & UAE
           <div className="flex justify-center md:justify-start">
             <Button
               clickHandle={() => setIsPopupOpen(true)}
-              label="Get Free Franchise Consultation"
+              label="Book a consultation"
             />
           </div>
         </div>
