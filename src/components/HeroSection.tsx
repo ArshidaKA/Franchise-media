@@ -26,7 +26,7 @@ Best Franchise Consultants in Kerala & UAE
             data-aos-duration="1300"
             className="mt-4 sm:mt-6 contentColor contentFont text-sm sm:text-base lg:text-lg mb-6"
           >
-           We are leading franchise consultants in Kerala helping businesses grow through franchise model development, legal documentation, and expansion strategies in Calicut, Malappuram, and UAE markets.
+           We are leading franchise consultants in Kerala helping businesses grow through franchise model development, legal documentation, and expansion strategies in kerala and UAE markets.
           </p>
           
 
