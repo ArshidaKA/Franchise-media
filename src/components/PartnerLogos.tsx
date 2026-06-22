@@ -38,7 +38,7 @@ const PartnerLogos: React.FC = () => {
     { name: "Hap & Hope", logo: "/partner/030.png", height: "h-12" },
     { name: "Heroelectric", logo: "/partner/031.png", height: "h-38" },
     { name: "IFCS", logo: "/partner/032.png", height: "h-32" },
-    { name: "Ojin", logo: "/partner/033.png", height: "h-20" },
+    // { name: "Ojin", logo: "/partner/033.png", height: "h-20" },
     { name: "Parisons Tea House", logo: "/partner/034.png", height: "h-34" },
     { name: "Vollmond", logo: "/partner/035.png", height: "h-20" },
     { name: "Wayn", logo: "/partner/036.png", height: "h-38" },

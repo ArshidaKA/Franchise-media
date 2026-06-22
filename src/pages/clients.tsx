@@ -39,7 +39,7 @@ const partners = [
     { name: "Avilpro", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602119/038_mzh5dj.jpg", height: "h-16" },
 
   { name: "IFCS – Franchise Media corporate client", logo: "/partner/032.png", height: "h-32" },
-  { name: "Ojin", logo: "/partner/033.png", height: "h-20" },
+  // { name: "Ojin", logo: "/partner/033.png", height: "h-20" },
   { name: "Parisons Tea House – tea franchise client", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602112/034_umasjb.png", height: "h-34" },
   { name: "Vollmond – franchise client", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602114/035_phr3fl.png", height: "h-20" },
   { name: "Wayn", logo: "https://res.cloudinary.com/dkguucrg3/image/upload/w_1400,q_auto,f_auto/v1769602114/036_csdhfo.png", height: "h-38" },
