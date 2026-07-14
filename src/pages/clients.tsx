@@ -57,6 +57,10 @@ const partners = [
                 { name: "classic", logo: "/partner/052.png", height: "h-16" },
                 {name:"ffc" , logo:"/partner/053.png" ,height:"h-14"},
                                 {name:"yaghma" , logo:"/partner/054.png" ,height:"h-14"},
+                                {name:"broasto ",logo:"/partner/056.png",height:"h-14"},
+                                                                {name:"mandhi stories ",logo:"/partner/057.png",height:"h-18"},
+
+
 
 
 
