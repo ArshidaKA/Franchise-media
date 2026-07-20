@@ -76,6 +76,69 @@ const Media = () => {
           </p>
         </div>
       </section>
+<section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-20">
+
+  {/* Workshop Content */}
+  <div
+    data-aos="fade-right"
+    data-aos-duration="1000"
+  >
+    <h2 className="text-2xl md:text-4xl font-bold text-[#1F2B6C] mb-4">
+      Workshop
+    </h2>
+
+    <p className="text-gray-700 leading-relaxed mb-4">
+      Our workshop brought together entrepreneurs, business owners, and aspiring
+      franchise partners for an engaging session focused on business growth,
+      franchise expansion, and practical strategies for building sustainable brands.
+    </p>
+
+    <p className="text-gray-700 leading-relaxed mb-4">
+      Participants gained valuable insights through interactive discussions,
+      real-world case studies, and expert guidance on scaling businesses
+      successfully.
+    </p>
+
+    <h4 className="font-semibold text-[#2C3EBD] mb-2">
+      Workshop Highlights
+    </h4>
+
+    <ul className="list-disc ml-6 text-gray-700 space-y-1">
+      <li>Franchise business opportunities</li>
+      <li>Brand expansion strategies</li>
+      <li>Marketing & customer acquisition</li>
+      <li>Networking with entrepreneurs</li>
+      <li>Interactive Q&A sessions</li>
+    </ul>
+  </div>
+
+  {/* Workshop Images */}
+  <div
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    className="grid grid-cols-2 gap-3"
+  >
+    {[
+      "/gallery/w-1.jpeg",
+      "/gallery/w-2.jpeg",
+      "/gallery/w-3.jpeg",
+      "/gallery/w-4.jpeg",
+      "/gallery/w-5.jpeg",
+      "/gallery/w-6.jpeg",
+    ].map((img, index) => (
+      <div
+        key={index}
+        className="overflow-hidden rounded-2xl shadow-md"
+      >
+        <img
+          src={img}
+          alt={`Workshop ${index + 1}`}
+          className="w-full h-44 object-cover hover:scale-105 transition duration-300"
+        />
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* ===========================
           EXISTING MEDIA GALLERY BELOW
